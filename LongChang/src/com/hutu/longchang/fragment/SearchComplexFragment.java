@@ -117,9 +117,7 @@ public class SearchComplexFragment extends BaseFragment implements
 				people = people.trim();
 
 				String msg =  null;
-				if (reg.length() == 0) {
-					msg = "请输入注册号";
-				}else if(name.length() != 0 && people.length() != 0){
+				if(name.length() != 0 && people.length() != 0){
 					msg = "商品名称与申请人只能有一个";
 				}else if(name.length() == 0 && people.length() == 0){
 					msg = "商品名称与申请人至少输入一个";

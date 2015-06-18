@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="#F9F9F9">
 
     <com.hutu.longchang.widget.HeadTitleView 
   		android:id="@+id/trade_manager_head"
@@ -23,14 +24,20 @@
             android:layout_weight=".34"
             android:text="国际分类号:" />
 
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight=".66"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            >
         <EditText
             android:id="@+id/search_comple_edit_classify"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/group"
-            android:layout_marginRight="@dimen/group"
-            android:layout_marginTop="@dimen/group"
-            android:layout_weight=".56"
+            android:layout_weight="0.75"
+            android:layout_height="fill_parent"
+            android:background="@null"
             android:ems="10"
             android:hint="@string/search_comple_edit_classify" 
             android:text="01">
@@ -39,12 +46,12 @@
         <Button
             android:id="@+id/bangzhu_btn"
             android:layout_width="0dp"
-            android:layout_weight=".1"
-            android:layout_height="wrap_content"
-            android:background="#0000"
-            android:textColor="#FF00"
-            android:text="\?" />
+            android:layout_weight="0.25"
+            android:layout_height="fill_parent"
+            android:background="@drawable/ic_help"
+            android:textColor="#FF00" />
 
+        </LinearLayout>
     </LinearLayout>
 
     <!-- <LinearLayout
