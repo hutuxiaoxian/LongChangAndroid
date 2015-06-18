@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="http://code.taobao.org/svn/imageco"
+   revision="1293"
+   last-author="oyqx"
+   uuid="4dd94c38-6a43-43d8-a131-06ce721702f8"
+   url="http://code.taobao.org/svn/imageco/trunk/lib_capture/src/com/google/zxing/qrcode/decoder"
+   committed-rev="7"
+   kind="dir"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="BitMatrixParser.java"
+   checksum="da98229dd8295116ed1c6c2e3e57dcd7"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="DataBlock.java"
+   checksum="d85f614f1ac0be4b7c91337ee6cd9937"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="DataMask.java"
+   checksum="9480bfbe3863cb16568631721c9db761"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="DecodedBitStreamParser.java"
+   checksum="e42ed130d6ca2698016414d04d276223"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="Decoder.java"
+   checksum="62bd357dd6b8a8beb20a86d3af5140b4"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="ErrorCorrectionLevel.java"
+   checksum="445657402695b691677893b96d6e2277"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="FormatInformation.java"
+   checksum="39f6e4157db4e27a361a2a669441013c"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="Mode.java"
+   checksum="fccf9a16d6e0ef2b8f2a3c1629347f7a"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="Version.java"
+   checksum="0655b1a142555491be526395f5808f50"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+</wc-entries>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.hutu.longchang.widget.HeadTitleView 
+        android:id="@+id/trade_manager_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+    </com.hutu.longchang.widget.HeadTitleView>
+
+	<LinearLayout
+	    android:id="@+id/layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:layout_above="@+id/button1"
+	    android:layout_below="@+id/trade_manager_head" >
+
+        <RelativeLayout
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/main_bt_xiangsi_selector"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:src="@drawable/index_icon02" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/bt_font"
+                android:gravity="right"
+            	android:layout_margin="5dp"
+                android:text="近似查询" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/main_bt_fenlei_selector"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:src="@drawable/index_icon03" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="right"
+            	android:layout_margin="5dp"
+                android:textColor="@color/bt_font"
+                android:text="综合查询" />
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="118dp"
+        android:background="@drawable/main_bt_zonghe_selector">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/index_icon03" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:text="状态查询"
+            android:textColor="@color/bt_font" />
+    </RelativeLayout>
+    
+</RelativeLayout>

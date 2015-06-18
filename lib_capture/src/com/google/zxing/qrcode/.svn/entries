@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="http://code.taobao.org/svn/imageco"
+   revision="1293"
+   last-author="oyqx"
+   uuid="4dd94c38-6a43-43d8-a131-06ce721702f8"
+   url="http://code.taobao.org/svn/imageco/trunk/lib_capture/src/com/google/zxing/qrcode"
+   committed-rev="7"
+   kind="dir"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="QRCodeReader.java"
+   checksum="32237566f915020e03790b26d26c8408"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="QRCodeWriter.java"
+   checksum="89b3712f60ecba8ef12216b71642ecfa"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="decoder"
+   kind="dir"/>
+<entry
+   name="detector"
+   kind="dir"/>
+<entry
+   name="encoder"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="http://code.taobao.org/svn/imageco"
+   revision="1293"
+   last-author="oyqx"
+   uuid="4dd94c38-6a43-43d8-a131-06ce721702f8"
+   url="http://code.taobao.org/svn/imageco/trunk/lib_capture/src/com/google/zxing/oned"
+   committed-rev="7"
+   kind="dir"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="CodaBarReader.java"
+   checksum="3787317ced3361443a8dad5f9180d8cb"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="Code128Reader.java"
+   checksum="76f6c4a2482cc992b83e9349b41ef852"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="Code128Writer.java"
+   checksum="5c61ac29124ed1efdcb966b2064b3ccf"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="Code39Reader.java"
+   checksum="9af47f9176ca71661ad99f597e4a1945"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="Code39Writer.java"
+   checksum="95616089cb0a5406ae0e978a37f189da"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="Code93Reader.java"
+   checksum="d2be186b5c305d801c6c8f47aec43e1f"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="EAN13Reader.java"
+   checksum="fec7e5c2fe2d70e7519540eaf04d8688"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="EAN13Writer.java"
+   checksum="2020f08c42ce8c650a7a9ceea8437cb6"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="EAN8Reader.java"
+   checksum="d96b04a9fe0f3da70b4fe02282a47cb0"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="EAN8Writer.java"
+   checksum="5ebf61cd32f02f968473ab30e4bd25b3"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="EANManufacturerOrgSupport.java"
+   checksum="d5d700e5fb24ce3677d90f41e4dee900"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="ITFReader.java"
+   checksum="b6dc2efe9bfba6f9ab868fdfe96dca8b"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="ITFWriter.java"
+   checksum="6f06691c9483bd683676ad4a23e8004f"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="MultiFormatOneDReader.java"
+   checksum="c5fd67288fb3db6b748baf0bc0b4f5ee"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="MultiFormatUPCEANReader.java"
+   checksum="5e4f5b3d2f37e8deabc161c48fe0b184"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="OneDReader.java"
+   checksum="a7b0d5519a5a1f10f0f68bc25a7d7adb"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="UPCAReader.java"
+   checksum="aedabbb8bf353c117ec8a5df42fa674c"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="UPCAWriter.java"
+   checksum="8d1b8f4df4f2c8ac1e82671aa393db3f"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="UPCEANExtensionSupport.java"
+   checksum="bd081b04008c595862bf0b538b9c8a03"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="UPCEANReader.java"
+   checksum="468efbbf64353a3824d2d525418cc6bf"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="UPCEANWriter.java"
+   checksum="854f16745133d5ffbb1f5610c9946e65"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="UPCEReader.java"
+   checksum="1d58095d6ec9d9c795f66c3604059f4e"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="rss"
+   kind="dir"/>
+</wc-entries>

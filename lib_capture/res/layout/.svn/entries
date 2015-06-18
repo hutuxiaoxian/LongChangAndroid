@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="http://code.taobao.org/svn/imageco"
+   revision="1293"
+   last-author="tanglibo"
+   uuid="4dd94c38-6a43-43d8-a131-06ce721702f8"
+   url="http://code.taobao.org/svn/imageco/trunk/lib_capture/res/layout"
+   committed-rev="643"
+   kind="dir"
+   committed-date="2012-05-31T02:50:20.590288Z"/>
+<entry
+   name="capture.xml"
+   checksum="0f65f6d56068fe20c2a1bcc172303565"
+   last-author="tanglibo"
+   text-time="2012-05-31T02:50:20.000000Z"
+   committed-rev="643"
+   kind="file"
+   committed-date="2012-05-31T02:50:20.590288Z"/>
+<entry
+   name="main_wrap.xml"
+   checksum="569198c32cca762a1e4f162a7894a41b"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+</wc-entries>

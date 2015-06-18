@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.hutu.longchang.widget.HeadTitleView 
+  		android:id="@+id/trade_manager_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+    </com.hutu.longchang.widget.HeadTitleView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="0dp"
+	        android:layout_marginLeft="@dimen/group"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".34"
+            android:text="国际分类号:" />
+
+        <EditText
+            android:id="@+id/search_comple_edit_classify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/group"
+            android:layout_marginRight="@dimen/group"
+            android:layout_marginTop="@dimen/group"
+            android:layout_weight=".56"
+            android:ems="10"
+            android:hint="@string/search_comple_edit_classify" 
+            android:text="01">
+        </EditText>
+
+        <Button
+            android:id="@+id/bangzhu_btn"
+            android:layout_width="0dp"
+            android:layout_weight=".1"
+            android:layout_height="wrap_content"
+            android:background="#0000"
+            android:textColor="#FF00"
+            android:text="\?" />
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:layout_gravity="center"
+            android:text="国际分类号:"
+            />
+        <Spinner
+	        android:id="@+id/search_comple_edit_classify"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/group"
+	        android:layout_marginRight="@dimen/group"
+	        android:layout_marginTop="@dimen/group"
+	        android:ems="10"
+	        android:hint="@string/search_comple_edit_classify" >
+       	</Spinner>
+    </LinearLayout> -->
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+        <TextView 
+            android:layout_width="0dp"
+	        android:layout_marginLeft="@dimen/group"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".34"
+            android:text="@string/search_comple_edit_register"
+            />
+        <EditText
+	        android:id="@+id/search_comple_edit_register"
+	        android:layout_width="0dp"
+            android:layout_weight=".66"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/group"
+	        android:layout_marginRight="@dimen/group"
+	        android:layout_marginTop="@dimen/group"
+	        android:ems="10"
+	        android:hint="@string/search_comple_edit_register" />
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight=".34"
+	        android:layout_marginLeft="@dimen/group"
+            android:layout_height="wrap_content"
+           	android:layout_gravity="center"
+            android:text="@string/search_comple_edit_name"
+            />
+        <EditText
+	        android:id="@+id/search_comple_edit_name"
+	        android:layout_width="0dp"
+            android:layout_weight=".66"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/group"
+	        android:layout_marginRight="@dimen/group"
+	        android:layout_marginTop="@dimen/group"
+	        android:ems="10"
+	        android:hint="@string/search_comple_edit_name" />
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight=".34"
+	        android:layout_marginLeft="@dimen/group"
+            android:layout_height="wrap_content"
+           	android:layout_gravity="center"
+            android:text="@string/search_comple_edit_people"
+            />
+        <EditText
+	        android:id="@+id/search_comple_edit_people"
+	        android:layout_width="0dp"
+            android:layout_weight=".66"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/group"
+	        android:layout_marginRight="@dimen/group"
+	        android:layout_marginTop="@dimen/group"
+	        android:ems="10"
+	        android:hint="@string/search_comple_edit_people" />
+    </LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight=".34"
+	        android:layout_marginLeft="@dimen/group"
+            android:layout_height="wrap_content"
+           	android:layout_gravity="center"
+            android:text="查找方式"
+            />
+        <Spinner
+	        android:id="@+id/search_comple_spinner"
+	        style="@style/AppBaseTheme"
+	        android:layout_width="0dp"
+            android:layout_weight=".66"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/group"
+	        android:layout_marginRight="@dimen/group"
+	        android:layout_marginTop="@dimen/group" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/search_comple_bt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/group"
+        android:layout_marginRight="@dimen/group"
+        android:layout_marginTop="@dimen/group"
+        android:background="@color/search_bt_bg"
+        android:textColor="@color/bt_font"
+        android:text="@string/search_comple_bt_search" />
+
+</LinearLayout>

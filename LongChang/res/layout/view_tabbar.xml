@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_height="60dp" >
+
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="44dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:background="#FFF0F0F0" />
+	<Button
+	    android:id="@+id/pager_bt_scan"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:background="@drawable/scan" />
+
+	<Button
+	    android:id="@+id/pager_bt_main"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginRight="28dp"
+	    android:layout_toLeftOf="@+id/pager_bt_scan"
+	    android:background="@drawable/pager_bt_main_selector" />
+
+	<Button
+	    android:id="@+id/pager_bt_account"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginLeft="26dp"
+	    android:layout_toRightOf="@+id/pager_bt_scan"
+	    android:background="@drawable/pager_bt_account_selector" />
+
+</RelativeLayout>

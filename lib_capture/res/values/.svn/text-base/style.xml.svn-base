@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="fullscreen" parent="android:Theme"> <!-- 为样式定义一个全局唯一的名字-->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowFullscreen">?android:windowNoTitle</item>
+        <!-- 全屏幕 -->
+    </style>
+    <style name="notitle" parent="android:Theme"> <!-- 为样式定义一个全局唯一的名字-->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+    </style>
+    <style name="portrait" parent="android:Theme">
+        <item name="android:screenOrientation">portrait
+        </item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

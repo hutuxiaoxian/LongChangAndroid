@@ -1,0 +1,53 @@
+# view AndroidManifest.xml #generated:69
+-keep class com.alipay.sdk.app.H5PayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.hutu.longchang.activity.ClassifyListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.hutu.longchang.activity.ListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.hutu.longchang.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.hutu.longchang.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.hutu.longchang.activity.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.hutu.longchang.activity.ScanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.hutu.longchang.activity.SearchClassActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.hutu.longchang.activity.SearchComplexActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.hutu.longchang.activity.SearchSameActivity { <init>(...); }
+
+# view res/layout/fragment_classifylist.xml #generated:6
+# view res/layout/fragment_details.xml #generated:8
+# view res/layout/fragment_erwei.xml #generated:7
+# view res/layout/fragment_list.xml #generated:8
+# view res/layout/fragment_login.xml #generated:40
+# view res/layout/fragment_main.xml #generated:8
+# view res/layout/fragment_recharge.xml #generated:8
+# view res/layout/fragment_rechargepayment.xml #generated:7
+# view res/layout/fragment_register.xml #generated:7
+# view res/layout/fragment_search_class.xml #generated:7
+# view res/layout/fragment_search_complex.xml #generated:7
+# view res/layout/fragment_search_same.xml #generated:7
+-keep class com.hutu.longchang.widget.HeadTitleView { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.imageco.library.CaptureActivity { <init>(...); }
+
+# view res/layout/capture.xml #generated:14
+-keep class com.imageco.library.ViewfinderView { <init>(...); }
+
+# onClick res/layout/fragment_login.xml #generated:9
+-keepclassmembers class * { *** registerClick(...); }
+

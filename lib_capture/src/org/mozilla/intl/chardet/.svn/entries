@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="http://code.taobao.org/svn/imageco"
+   revision="1293"
+   last-author="oyqx"
+   uuid="4dd94c38-6a43-43d8-a131-06ce721702f8"
+   url="http://code.taobao.org/svn/imageco/trunk/lib_capture/src/org/mozilla/intl/chardet"
+   committed-rev="7"
+   kind="dir"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="Big5Statistics.java"
+   checksum="d87d2b7f5643ba6b907c67b054fbc70a"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="EUCJPStatistics.java"
+   checksum="b695ffb3308e1f47efc59b3535f04fbf"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="EUCKRStatistics.java"
+   checksum="0ae2ef73590d2cdc63972f29840ef76a"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="EUCTWStatistics.java"
+   checksum="d20f8195235688591765164e20aa4c6e"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="GB2312Statistics.java"
+   checksum="d3711ed06445945aa6c4396583071ef1"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="HtmlCharsetDetector.java"
+   checksum="1aa0ed34c9d5f3e968667a9739984254"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsBIG5Verifier.java"
+   checksum="d3ecc976feba32310d675bd119a7d180"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsCP1252Verifier.java"
+   checksum="b3862cc642e9a8535aa9759eefa54d9e"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsDetector.java"
+   checksum="85ad93acd43a19beae804cc9f5849c81"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsEUCJPVerifier.java"
+   checksum="733193b3a10acff59f051ef3973c7d84"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsEUCKRVerifier.java"
+   checksum="feeceb6a9762b685d5ba50c7cb21afd8"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsEUCSampler.java"
+   checksum="b504d36b2b5fafc422a98d939eedc933"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsEUCStatistics.java"
+   checksum="59470707cc4d9e60b79f67179a7e32ae"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsEUCTWVerifier.java"
+   checksum="da7609d8c588b72a8aadb739d80cc561"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsGB18030Verifier.java"
+   checksum="2eeaadf9d88113ee4790be4d1400d20f"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsGB2312Verifier.java"
+   checksum="d52a9269634eb54ab779ff98a2d79f21"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsHZVerifier.java"
+   checksum="74b15477d06213d0a89b37327a6661ca"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsICharsetDetectionObserver.java"
+   checksum="cee4bea8676f6855f984e71230ef36cc"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsICharsetDetector.java"
+   checksum="f89ba59e4dd0fc22e742e7add3016933"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsISO2022CNVerifier.java"
+   checksum="81ac3060aa3ee66cfb1bb3580a52e3b8"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsISO2022JPVerifier.java"
+   checksum="d8decc46063a71c6551a83397b46ec10"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsISO2022KRVerifier.java"
+   checksum="8a3abbf65702fe2bb50180f97d56b892"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsPSMDetector.java"
+   checksum="bda952d817b251b6e898b586fad78746"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsSJISVerifier.java"
+   checksum="7f22404945d3d137b94ed6c302815c9a"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsUCS2BEVerifier.java"
+   checksum="76488aac8e5bb1c980c07c444be1c6b4"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsUCS2LEVerifier.java"
+   checksum="8472f34d8b364deacd98bd4488311b28"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsUTF8Verifier.java"
+   checksum="035b4750bd8f97db763ceeac46ce861a"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="nsVerifier.java"
+   checksum="6629ff49f60aca3ef37ad0dc3d5067f2"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+</wc-entries>

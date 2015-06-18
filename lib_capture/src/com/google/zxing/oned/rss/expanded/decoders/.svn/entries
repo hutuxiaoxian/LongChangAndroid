@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="http://code.taobao.org/svn/imageco"
+   revision="1293"
+   last-author="oyqx"
+   uuid="4dd94c38-6a43-43d8-a131-06ce721702f8"
+   url="http://code.taobao.org/svn/imageco/trunk/lib_capture/src/com/google/zxing/oned/rss/expanded/decoders"
+   committed-rev="7"
+   kind="dir"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AI013103decoder.java"
+   checksum="d37359aaaf494b58319e49c58ab8b5c5"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AI01320xDecoder.java"
+   checksum="b292e0db3b626951d5ce61c5a1f8f78f"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AI01392xDecoder.java"
+   checksum="05121f4cf808182a980a13cf35ff2ff6"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AI01393xDecoder.java"
+   checksum="66e58b34849f1ce99160ddb90e2e113d"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AI013x0x1xDecoder.java"
+   checksum="d1f8d4705828bbabd39fc417d6af17cb"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AI013x0xDecoder.java"
+   checksum="074585c368db417b2e561c6840a9be7f"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AI01AndOtherAIs.java"
+   checksum="0a0797115d31c19ac7ebf958bd6b4842"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AI01decoder.java"
+   checksum="a59412053067dcd69ee1c941d99bffe6"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AI01weightDecoder.java"
+   checksum="1a938c69c482ae1996fc29a02008d828"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AbstractExpandedDecoder.java"
+   checksum="b48d325b88d82fe26d8b0ce759ffbd05"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="AnyAIDecoder.java"
+   checksum="7122051551752a0bf3d472e81820477d"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="BlockParsedResult.java"
+   checksum="a87055e2fe480d179444e887fab74b71"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="CurrentParsingState.java"
+   checksum="7c1d659f7c9c9e4998e7420e58db8673"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="DecodedChar.java"
+   checksum="9fc09bd191304585382adb33c10358b2"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="DecodedInformation.java"
+   checksum="646b77ee6db0d96b64b9109606c88545"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="DecodedNumeric.java"
+   checksum="da5120090fd879a51033f6bc798c0262"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="DecodedObject.java"
+   checksum="ebecb3dfe83d3a4e1da96490d307fd8a"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="FieldParser.java"
+   checksum="32547964534ea44f5d9ad77311244896"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="GeneralAppIdDecoder.java"
+   checksum="855e41fe7515082b90db484fd9e8c3f7"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+</wc-entries>

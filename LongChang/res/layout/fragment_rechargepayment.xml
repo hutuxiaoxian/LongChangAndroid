@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.hutu.longchang.widget.HeadTitleView 
+        android:id="@+id/trade_manager_head"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        
+    </com.hutu.longchang.widget.HeadTitleView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/trade_manager_head"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="42dp"
+        android:text="付款金额:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="34dp"
+        android:text="支付方式:" 
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/chongzhi_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10" 
+        android:layout_marginRight="20dp"
+        android:hint="输入金额">
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/chongzhi_txt"
+        android:src="@drawable/ic_zhifubao" />
+
+    <Button
+        android:id="@+id/chongzhi_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="32dp"
+        android:text="继续充值"
+        android:background="#80FF80"
+        android:textColor="#ffffff"
+        android:layout_marginRight="20dp" />
+    
+</RelativeLayout>

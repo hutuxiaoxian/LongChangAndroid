@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="http://code.taobao.org/svn/imageco"
+   revision="1293"
+   last-author="oyqx"
+   uuid="4dd94c38-6a43-43d8-a131-06ce721702f8"
+   url="http://code.taobao.org/svn/imageco/trunk/lib_capture/src/com/imageco/library"
+   committed-rev="913"
+   kind="dir"
+   committed-date="2012-07-12T06:43:48.400597Z"/>
+<entry
+   name="AutoFocusCallback.java"
+   checksum="44b7ac726f4e6ab21b73e06d278e2fb7"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="CameraConfigurationManager.java"
+   checksum="52aea595de980fa92833349e8166812e"
+   last-author="tanglibo"
+   text-time="2012-05-29T03:40:59.000000Z"
+   committed-rev="618"
+   kind="file"
+   committed-date="2012-05-29T03:40:59.000692Z"/>
+<entry
+   name="CameraManager.java"
+   checksum="05b0722e9f23261226a699ff13faa76c"
+   last-author="oyqx"
+   text-time="2012-07-12T06:43:48.000000Z"
+   committed-rev="913"
+   kind="file"
+   committed-date="2012-07-12T06:43:48.400597Z"/>
+<entry
+   name="CaptureActivity.java"
+   checksum="1f3e0f8203d94e536d3336040e5290f3"
+   last-author="oyqx"
+   text-time="2012-07-12T06:43:48.000000Z"
+   committed-rev="913"
+   kind="file"
+   committed-date="2012-07-12T06:43:48.400597Z"/>
+<entry
+   name="CaptureActivityHandler.java"
+   checksum="ae79c6c56f3866a0b4d4d5a95d166e19"
+   last-author="tanglibo"
+   text-time="2012-05-29T03:40:59.000000Z"
+   committed-rev="618"
+   kind="file"
+   committed-date="2012-05-29T03:40:59.000692Z"/>
+<entry
+   name="CaptureConfig.java"
+   checksum="dce06ba6d73d73382571a0745b9eb251"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="CaptureResult.java"
+   checksum="14149b80fd8ea1a9e932906260c5f0ba"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="DecodeFormatManager.java"
+   checksum="909722fb0422f11473220d5152fcd10e"
+   last-author="tanglibo"
+   text-time="2012-05-29T03:40:59.000000Z"
+   committed-rev="618"
+   kind="file"
+   committed-date="2012-05-29T03:40:59.000692Z"/>
+<entry
+   name="DecodeHandler.java"
+   checksum="031b75158d4b0373df9922094f1bfc02"
+   last-author="tanglibo"
+   text-time="2012-05-29T03:40:59.000000Z"
+   committed-rev="618"
+   kind="file"
+   committed-date="2012-05-29T03:40:59.000692Z"/>
+<entry
+   name="DecodeThread.java"
+   checksum="f7bf20a2ea6488c9f11569d10a9ebf99"
+   last-author="tanglibo"
+   text-time="2012-05-29T03:40:59.000000Z"
+   committed-rev="618"
+   kind="file"
+   committed-date="2012-05-29T03:40:59.000692Z"/>
+<entry
+   name="FinishListener.java"
+   checksum="7bb74e0a262c672b70ea3c3c43accb0f"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="FlashlightManager.java"
+   checksum="7e1eb3c1ed0a836a1ebba4800e612d07"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="InactivityTimer.java"
+   checksum="b472687fb81c699868f5495341d5489c"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="Intents.java"
+   checksum="722fdbe8b62d26e9922505a8d4e3a44d"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="PictureCallBack.java"
+   checksum="10105e5e5f5cd7590b4e7a8d0195868b"
+   last-author="tanglibo"
+   text-time="2012-05-29T03:40:59.000000Z"
+   committed-rev="618"
+   kind="file"
+   committed-date="2012-05-29T03:40:59.000692Z"/>
+<entry
+   name="PlanarYUVLuminanceSource.java"
+   checksum="882ebc83d65dc0c30ce8afc27361faef"
+   last-author="tanglibo"
+   text-time="2012-05-29T03:40:59.000000Z"
+   committed-rev="618"
+   kind="file"
+   committed-date="2012-05-29T03:40:59.000692Z"/>
+<entry
+   name="PreviewCallback.java"
+   checksum="edcf1ecd72ddd8ad2c072809fa6d5f30"
+   last-author="tanglibo"
+   text-time="2012-05-29T03:40:59.000000Z"
+   committed-rev="618"
+   kind="file"
+   committed-date="2012-05-29T03:40:59.000692Z"/>
+<entry
+   name="RGBLuminanceSource.java"
+   checksum="6c34fbd8aa4da6a26b63fbf3c3c65a9d"
+   last-author="tanglibo"
+   text-time="2012-05-29T03:40:59.000000Z"
+   committed-rev="618"
+   kind="file"
+   committed-date="2012-05-29T03:40:59.000692Z"/>
+<entry
+   name="ViewfinderResultPointCallback.java"
+   checksum="6d372c56daf3fa86ec0e8e193f255bcb"
+   last-author="oyqx"
+   text-time="2012-03-06T06:06:28.000000Z"
+   committed-rev="7"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="ViewfinderView.java"
+   checksum="0a821d8bde958d4e7928cf730f2471e9"
+   last-author="tanglibo"
+   text-time="2012-05-25T02:37:58.000000Z"
+   committed-rev="587"
+   kind="file"
+   committed-date="2012-05-25T02:37:58.293045Z"/>
+</wc-entries>

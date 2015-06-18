@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="http://code.taobao.org/svn/imageco"
+   revision="1293"
+   last-author="tanglibo"
+   uuid="4dd94c38-6a43-43d8-a131-06ce721702f8"
+   url="http://code.taobao.org/svn/imageco/trunk/lib_capture/res/drawable-hdpi"
+   committed-rev="589"
+   kind="dir"
+   committed-date="2012-05-25T02:38:11.092938Z"/>
+<entry
+   name="bg_btn.png"
+   checksum="cf89e3a25d60974d7e865a1e41ac6c8a"
+   last-author="tanglibo"
+   committed-rev="589"
+   text-time="2012-05-25T02:38:11.000000Z"
+   kind="file"
+   committed-date="2012-05-25T02:38:11.092938Z"
+   prop-time="2012-08-06T05:49:53.000000Z"/>
+<entry
+   name="ruler.png"
+   checksum="abff3dfd2371127c625d710b80182dac"
+   last-author="tanglibo"
+   committed-rev="589"
+   text-time="2012-05-25T02:38:11.000000Z"
+   kind="file"
+   committed-date="2012-05-25T02:38:11.092938Z"
+   prop-time="2012-08-06T05:49:53.000000Z"/>
+<entry
+   name="seekbar_drawable.xml"
+   checksum="4f4aab28acaf5226b57cf0ec6574b45d"
+   last-author="tanglibo"
+   text-time="2012-05-25T02:38:11.000000Z"
+   committed-rev="589"
+   kind="file"
+   committed-date="2012-05-25T02:38:11.092938Z"/>
+</wc-entries>

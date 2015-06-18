@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <com.hutu.longchang.widget.HeadTitleView
+       android:id="@+id/trade_manager_head" 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+       
+   </com.hutu.longchang.widget.HeadTitleView>
+
+    <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/group" >
+
+        <Button
+            android:id="@+id/search_class_bt_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:clickable="true"
+            android:onClick="nameClick"
+            android:textColor="@color/search_font"
+            android:text="@string/search_class_bt_name" />
+
+        <Button
+            android:id="@+id/search_class_bt_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:clickable="true"
+            android:onClick="classClick"
+            android:text="@string/search_class_bt_class" />
+    </LinearLayout> -->
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_gravity="center"
+	        android:text="@string/list_text_id" />
+	    <EditText
+	        android:id="@+id/searc_class_edit_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/group"
+	        android:background="@drawable/js_srk"
+	        android:ems="10" >
+	
+	        <requestFocus />
+	    </EditText>
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/searc_class_bt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/group"
+        android:background="@color/search_bt_bg"
+        android:text="@string/search_comple_bt_search"
+        android:textColor="@color/bt_font" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#868dc0"
+    android:orientation="vertical">
+    
+    <Button
+        android:id="@+id/login_bt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="#00000000"
+        android:clickable="true"
+        android:onClick="registerClick"
+        android:text="@string/login_bt_register"
+        android:textColor="@color/bt_font" />
+	<FrameLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+		    >
+
+		    <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:src="@drawable/login_bg" />
+
+
+	</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <com.hutu.longchang.widget.HeadTitleView 
+            android:id="@+id/trade_manager_head"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+        </com.hutu.longchang.widget.HeadTitleView>
+
+	    <ImageView
+	        android:id="@+id/login_img_logo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_margin="@dimen/group"
+	        android:src="@drawable/login_logo" />
+    
+    <EditText
+        android:id="@+id/login_edit_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:background="@drawable/login_srk"
+        android:hint="@string/login_edit_account" 
+        android:maxLength="11">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/login_edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_srk"
+        android:ems="10"
+		android:inputType="textPassword"
+        android:hint="@string/login_edit_password" >
+    </EditText>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/login_bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/bt_bg"
+        android:text="@string/login_bt_login"
+        android:textColor="@color/bt_font" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hutu.longchang"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
+    
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/titlebar" >
+        <activity
+            android:name="com.hutu.longchang.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity  android:name="com.hutu.longchang.activity.ListActivity" />
+           
+        <!--  <activity  android:name="com.hutu.longchang.activity.MainActivity" />-->
+        
+        <activity  android:name="com.hutu.longchang.activity.RegisterActivity" />
+        
+        <activity  android:name="com.hutu.longchang.activity.ScanActivity" />
+        
+        <activity  android:name="com.hutu.longchang.activity.SearchClassActivity" />
+        
+        <activity  android:name="com.hutu.longchang.activity.SearchComplexActivity" />
+        
+        <activity  android:name="com.hutu.longchang.activity.SearchSameActivity" />
+        
+        <activity  android:name="com.hutu.longchang.activity.ClassifyListActivity" />
+        
+        <activity
+                android:name="com.imageco.library.CaptureActivity"
+                android:configChanges="orientation|keyboardHidden"
+                android:screenOrientation="portrait"
+                android:theme="@style/fullscreen"
+                android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.hutu.longchang.activity.LoginActivity" 
+            android:launchMode="singleTask"></activity>
+        
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

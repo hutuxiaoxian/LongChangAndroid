@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   repos="http://code.taobao.org/svn/imageco"
+   revision="1293"
+   last-author="oyqx"
+   uuid="4dd94c38-6a43-43d8-a131-06ce721702f8"
+   url="http://code.taobao.org/svn/imageco/trunk/lib_capture/res/raw"
+   committed-rev="7"
+   kind="dir"
+   committed-date="2012-03-06T06:06:28.972864Z"/>
+<entry
+   name="cameraclick.ogg"
+   checksum="9a49b1e465c318514f73166bf71336fe"
+   last-author="oyqx"
+   committed-rev="7"
+   text-time="2012-03-06T06:06:28.000000Z"
+   kind="file"
+   committed-date="2012-03-06T06:06:28.972864Z"
+   prop-time="2012-08-06T05:49:53.000000Z"/>
+</wc-entries>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bt_bg">#83F25C</color>
+    <color name="bt_font">#FFFFFF</color>
+    <color name="titlebar_bg">#868dc0</color>
+    <color name="search_font">#87abe6</color>
+    <color name="search_bt_bg">#5cabf2</color>
+</resources>
