@@ -55,8 +55,8 @@ public final class R {
 	}
 	public static final class drawable {
 		public static final int bg_btn = 0x7f020000;
-		public static final int ruler = 0x7f020019;
-		public static final int seekbar_drawable = 0x7f02001c;
+		public static final int ruler = 0x7f02001c;
+		public static final int seekbar_drawable = 0x7f02001f;
 	}
 	public static final class id {
 		public static final int auto_focus = 0x7f060000;
@@ -79,7 +79,7 @@ public final class R {
 	}
 	public static final class layout {
 		public static final int capture = 0x7f030001;
-		public static final int main_wrap = 0x7f030015;
+		public static final int main_wrap = 0x7f030019;
 	}
 	public static final class raw {
 		public static final int cameraclick = 0x7f040000;

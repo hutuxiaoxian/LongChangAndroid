@@ -61,7 +61,8 @@
         android:ems="10"
         android:background="@drawable/login_srk"
         android:hint="@string/login_edit_account" 
-        android:maxLength="11">
+        android:maxLength="11"
+        android:inputType="number">
         <requestFocus />
     </EditText>
 

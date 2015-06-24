@@ -92,11 +92,11 @@ public class SearchComplexFragment extends BaseFragment implements
 			@Override
 			public void onClick(View paramView) {
 				Bundle bundle = new Bundle();
-				bundle.putSerializable("data", classifyData);
+//				bundle.putSerializable("data", classifyData);
 				bundle.putInt("type", 1);
-				BaseFragment fragment = new ClassifyListFragment();
+				BaseFragment fragment = new ShopListFragment();
 				fragment.setArguments(bundle);
-				showFragment(fragment, Constant.TAG_CLASSFYLIST);
+				showFragment(fragment, Constant.TAG_SHOPLIST);
 			}
 		});
 		searchBtn.setOnClickListener(new OnClickListener() {

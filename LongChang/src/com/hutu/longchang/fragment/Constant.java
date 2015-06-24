@@ -26,6 +26,8 @@ public interface Constant {
 	
 	public String TAG_CLASSFYLIST = "classfylist_fragment";
 	
+	public String TAG_SHOPLIST = "shoplist_fragment";
+	
 	
 //	SearchComplexActivity
 //	SearchClassActivity

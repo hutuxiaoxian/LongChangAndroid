@@ -384,5 +384,21 @@ public class Request {
 		System.out.println("GETURL-----" + url);
 		httpGetConnect(url);
 	}
+	
+	/**
+	 * 根据名称获取商标数据
+	 * @param detaiName
+	 */
+	public void getDetailInfo (String detaiName,int start , int end){
+		try {
+			String name= URLEncoder.encode(detaiName,"UTF-8");
+			String url = HostName + "?method=GetDetailInfo&DetailName=" + name;
+			url = url + "&Start=" + start + "&End=" + end;
+			httpGetConnect(url);
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 }

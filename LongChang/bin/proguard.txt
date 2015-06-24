@@ -38,9 +38,13 @@
 # view res/layout/fragment_rechargepayment.xml #generated:7
 # view res/layout/fragment_register.xml #generated:7
 # view res/layout/fragment_search_class.xml #generated:7
-# view res/layout/fragment_search_complex.xml #generated:7
-# view res/layout/fragment_search_same.xml #generated:7
+# view res/layout/fragment_search_complex.xml #generated:8
+# view res/layout/fragment_search_same.xml #generated:9
+# view res/layout/fragment_shoplist.xml #generated:8
 -keep class com.hutu.longchang.widget.HeadTitleView { <init>(...); }
+
+# view res/layout/fragment_shoplist.xml #generated:47
+-keep class com.hutu.longchang.widget.MyListView { <init>(...); }
 
 # view AndroidManifest.xml #generated:60
 -keep class com.imageco.library.CaptureActivity { <init>(...); }

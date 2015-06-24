@@ -17,41 +17,47 @@
         android:layout_height="wrap_content" >
 
         <TextView
+            android:id="@+id/textView1"
             android:layout_width="0dp"
 	        android:layout_marginLeft="@dimen/group"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight=".34"
             android:text="国际分类号:" />
+        
+        <RelativeLayout 
+             android:layout_width="0dp"
+            android:layout_weight=".66"
+	        android:layout_height="40dp"
+	         android:layout_marginLeft="@dimen/group"
+	        android:layout_marginRight="@dimen/group"
+	        android:layout_marginTop="@dimen/group"
+            android:background="@drawable/js_srk"
+            >
+
+	        <Button
+	            android:id="@+id/bangzhu_btn"
+	            android:layout_width="44dp"
+	            android:layout_height="44dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:background="@drawable/ic_help"/>
+
+	        <EditText
+	            android:id="@+id/search_comple_edit_classify"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:background="@null"
+	            android:ems="10"
+	            android:hint="@string/search_comple_edit_classify"
+	            android:text="01" 
+	            android:layout_toLeftOf="@id/bangzhu_btn">	      
+	         </EditText>
+
+        </RelativeLayout>
 
         
-        <LinearLayout 
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight=".66"
-            android:orientation="horizontal"
-            android:background="#ffffff"
-            >
-        <EditText
-            android:id="@+id/search_comple_edit_classify"
-            android:layout_width="0dp"
-            android:layout_weight="0.75"
-            android:layout_height="fill_parent"
-            android:background="@null"
-            android:ems="10"
-            android:hint="@string/search_comple_edit_classify" 
-            android:text="01">
-        </EditText>
 
-        <Button
-            android:id="@+id/bangzhu_btn"
-            android:layout_width="0dp"
-            android:layout_weight="0.25"
-            android:layout_height="fill_parent"
-            android:background="@drawable/ic_help"
-            android:textColor="#FF00" />
-
-        </LinearLayout>
     </LinearLayout>
 
     <!-- <LinearLayout
@@ -97,7 +103,8 @@
 	        android:layout_marginRight="@dimen/group"
 	        android:layout_marginTop="@dimen/group"
 	        android:ems="10"
-	        android:hint="@string/search_comple_edit_register" />
+	        android:hint="@string/search_comple_edit_register" 
+	        android:background="@drawable/js_srk"/>
     </LinearLayout>
     
 	<LinearLayout
@@ -121,7 +128,8 @@
 	        android:layout_marginRight="@dimen/group"
 	        android:layout_marginTop="@dimen/group"
 	        android:ems="10"
-	        android:hint="@string/search_comple_edit_name" />
+	        android:hint="@string/search_comple_edit_name"
+	        android:background="@drawable/js_srk" />
     </LinearLayout>
     
 	<LinearLayout
@@ -145,7 +153,8 @@
 	        android:layout_marginRight="@dimen/group"
 	        android:layout_marginTop="@dimen/group"
 	        android:ems="10"
-	        android:hint="@string/search_comple_edit_people" />
+	        android:hint="@string/search_comple_edit_people" 
+	        android:background="@drawable/js_srk"/>
     </LinearLayout>
 	
     <LinearLayout

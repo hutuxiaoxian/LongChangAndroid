@@ -10,6 +10,7 @@ public class SharedPreferencesUtil {
 	public static final String CONFIG_LONGCHANG = "config_longchang";
 
 	private static String USERNAME = "username";
+	
 	private Context mContext;
 	private static SharedPreferencesUtil INSTANCE = null;
 

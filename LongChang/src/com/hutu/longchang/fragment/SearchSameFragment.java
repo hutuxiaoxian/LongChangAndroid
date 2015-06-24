@@ -128,11 +128,11 @@ public class SearchSameFragment extends BaseFragment implements NetWorkCallBack{
 //				intent.putExtra("data", classifyData);
 //				this.startActivityForResult(intent, 0);
 				Bundle bundle = new Bundle();
-				bundle.putSerializable("data", classifyData);
+//				bundle.putSerializable("data", classifyData);
 				bundle.putInt("type", 0);
-				BaseFragment fragment = new ClassifyListFragment();
+				BaseFragment fragment = new ShopListFragment();
 				fragment.setArguments(bundle);
-				showFragment(fragment, Constant.TAG_CLASSFYLIST);
+				showFragment(fragment, Constant.TAG_SHOPLIST);
 			}
 		});
 	}
