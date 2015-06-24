@@ -25,10 +25,10 @@ public class MyListView extends ListView implements OnScrollListener {
 	private int headerViewHeight; // 头布局的高度
 	private View headerView; // 头布局的对象
 
-	private final int DOWN_PULL_REFRESH = 0; // 下拉刷新状态
-	private final int RELEASE_REFRESH = 1; // 松开刷新
-	private final int REFRESHING = 2; // 正在刷新中
-	private int currentState = DOWN_PULL_REFRESH; // 头布局的状态: 默认为下拉刷新状态
+//	private final int DOWN_PULL_REFRESH = 0; // 下拉刷新状态
+//	private final int RELEASE_REFRESH = 1; // 松开刷新
+//	private final int REFRESHING = 2; // 正在刷新中
+//	private int currentState = DOWN_PULL_REFRESH; // 头布局的状态: 默认为下拉刷新状态
 
 	private Animation upAnimation; // 向上旋转的动画
 	private Animation downAnimation; // 向下旋转的动画
@@ -50,7 +50,7 @@ public class MyListView extends ListView implements OnScrollListener {
 
 	public MyListView(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		initHeaderView();
+//		initHeaderView();
 		initFooterView();
 		this.setOnScrollListener(this);
 	}
@@ -144,29 +144,29 @@ public class MyListView extends ListView implements OnScrollListener {
 //		return super.onTouchEvent(ev);
 //	}
 
-	/**
-	 * 根据currentState刷新头布局的状态
-	 */
-	private void refreshHeaderView() {
-		switch (currentState) {
-		case DOWN_PULL_REFRESH: // 下拉刷新状态
-			tvState.setText("下拉刷新");
-			ivArrow.startAnimation(downAnimation); // 执行向下旋转
-			break;
-		case RELEASE_REFRESH: // 松开刷新状态
-			tvState.setText("松开刷新");
-			ivArrow.startAnimation(upAnimation); // 执行向上旋转
-			break;
-		case REFRESHING: // 正在刷新中状态
-			ivArrow.clearAnimation();
-			ivArrow.setVisibility(View.GONE);
-			mProgressBar.setVisibility(View.VISIBLE);
-			tvState.setText("正在刷新中...");
-			break;
-		default:
-			break;
-		}
-	}
+//	/**
+//	 * 根据currentState刷新头布局的状态
+//	 */
+//	private void refreshHeaderView() {
+//		switch (currentState) {
+//		case DOWN_PULL_REFRESH: // 下拉刷新状态
+//			tvState.setText("下拉刷新");
+//			ivArrow.startAnimation(downAnimation); // 执行向下旋转
+//			break;
+//		case RELEASE_REFRESH: // 松开刷新状态
+//			tvState.setText("松开刷新");
+//			ivArrow.startAnimation(upAnimation); // 执行向上旋转
+//			break;
+//		case REFRESHING: // 正在刷新中状态
+//			ivArrow.clearAnimation();
+//			ivArrow.setVisibility(View.GONE);
+//			mProgressBar.setVisibility(View.VISIBLE);
+//			tvState.setText("正在刷新中...");
+//			break;
+//		default:
+//			break;
+//		}
+//	}
 
 	private void initAnimation() {
 		upAnimation = new RotateAnimation(0f, -180f,
@@ -212,17 +212,17 @@ public class MyListView extends ListView implements OnScrollListener {
 		mOnRefershListener = listener;
 	}
 
-	/**
-	 * 隐藏头布局
-	 */
-	public void hideHeaderView() {
-		headerView.setPadding(0, -headerViewHeight, 0, 0);
-		ivArrow.setVisibility(View.GONE);
-		mProgressBar.setVisibility(View.GONE);
-		tvState.setText("下拉刷新");
-		tvLastUpdateTime.setText("最后刷新时间: " + getLastUpdateTime());
-		currentState = DOWN_PULL_REFRESH;
-	}
+//	/**
+//	 * 隐藏头布局
+//	 */
+//	public void hideHeaderView() {
+//		headerView.setPadding(0, -headerViewHeight, 0, 0);
+//		ivArrow.setVisibility(View.GONE);
+//		mProgressBar.setVisibility(View.GONE);
+//		tvState.setText("下拉刷新");
+//		tvLastUpdateTime.setText("最后刷新时间: " + getLastUpdateTime());
+//		currentState = DOWN_PULL_REFRESH;
+//	}
 
 	/**
 	 * 隐藏脚布局
