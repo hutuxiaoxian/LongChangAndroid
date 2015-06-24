@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.hutu.longchang.widget.HeadTitleView
+        android:id="@+id/trade_manager_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+    </com.hutu.longchang.widget.HeadTitleView>
+    
+    <RelativeLayout 
+        android:id="@+id/sear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#60ADB7"
+        android:layout_below="@id/trade_manager_head">
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/shop_layout">
+            
+            <EditText 
+                android:id="@+id/edit_sear_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:hint="请输入查询关键字"
+                android:background="@null"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"/>
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_shopping_sousuo"/>
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    <com.hutu.longchang.widget.MyListView
+        android:id="@+id/serach_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/sear_layout">
+        
+    </com.hutu.longchang.widget.MyListView>
+</RelativeLayout>
