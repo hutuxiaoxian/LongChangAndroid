@@ -111,6 +111,7 @@ public class SearchClassFragment extends BaseFragment implements NetWorkCallBack
 						BaseFragment fragment = new ListFragment();
 						Bundle bundle = new Bundle();
 						bundle.putSerializable("data", arrData);
+						bundle.putInt("searchclass", 1);
 						fragment.setArguments(bundle);
 						showFragment(fragment, Constant.TAG_SEARCHLIST);
 						

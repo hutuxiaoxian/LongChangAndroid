@@ -36,7 +36,7 @@ public class SearchComplexFragment extends BaseFragment implements
 	private Button searchBtn;
 	private Button info_Btn;
 
-	String[] arrData = new String[] { "精确","模糊" };
+	String[] arrData = new String[] { "精确" };
 	ArrayList<HashMap<String, String>> classifyData = new ArrayList<HashMap<String, String>>();
 
 	@Override
@@ -119,8 +119,15 @@ public class SearchComplexFragment extends BaseFragment implements
 				String msg =  null;
 				if(name.length() != 0 && people.length() != 0){
 					msg = "商品名称与申请人只能有一个";
-				}else if(name.length() == 0 && people.length() == 0){
-					msg = "商品名称与申请人至少输入一个";
+				}
+				if(reg.length() == 0){
+					if(name.length() == 0 && people.length() == 0){
+						msg = "注册号商品名称与申请人至少输入一个";
+					}
+				}else{
+					if(name.length() != 0 && people.length() != 0){
+						msg = "商品名称与申请人只输入一个";
+					}
 				}
 				if(msg != null){
 					AlertDialog.Builder dialog = new AlertDialog.Builder(

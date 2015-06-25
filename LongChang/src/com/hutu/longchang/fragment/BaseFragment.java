@@ -8,6 +8,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.hutu.longchang.R;
+import com.hutu.longchang.model.Commodityd;
 import com.hutu.longchang.widget.HeadTitleView;
 
 import android.app.Activity;

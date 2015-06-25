@@ -16,6 +16,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -50,6 +51,9 @@ public class LoginFragment extends BaseFragment implements NetWorkCallBack {
 		mSubmit_Btn = (Button) mView.findViewById(R.id.login_bt_login);
 		register_btn = (Button) mView.findViewById(R.id.login_bt_register);
 		setTitle("登录");
+		if(!TextUtils.isEmpty(SharedPreferencesUtil.getInstance(mActivity).UserNameload())){
+			mUserPhone_et.setText(SharedPreferencesUtil.getInstance(mActivity).UserNameload());
+		}
 	}
 
 	@Override
@@ -120,6 +124,7 @@ public class LoginFragment extends BaseFragment implements NetWorkCallBack {
 			if ("1".equals(userlogin)) {
 				userName = jsonObject.getString("UserName");
 				SharedPreferencesUtil.getInstance(mActivity).saveUserName(userName);
+				SharedPreferencesUtil.getInstance(mActivity).userNamesave(userName);
 				userId = jsonObject.getString("UserID");
 				showFragment(new MainFragment(), Constant.TAG_MAIN);
 			} else if ("0".equals(userlogin)) {

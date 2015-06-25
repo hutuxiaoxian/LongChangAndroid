@@ -4,6 +4,9 @@
 # view AndroidManifest.xml #generated:58
 -keep class com.hutu.longchang.activity.ClassifyListActivity { <init>(...); }
 
+# view AndroidManifest.xml #generated:77
+-keep class com.hutu.longchang.activity.DetailsActivity { <init>(...); }
+
 # view AndroidManifest.xml #generated:44
 -keep class com.hutu.longchang.activity.ListActivity { <init>(...); }
 
@@ -29,7 +32,10 @@
 -keep class com.hutu.longchang.activity.SearchSameActivity { <init>(...); }
 
 # view res/layout/fragment_classifylist.xml #generated:6
+# view res/layout/fragment_detailgonggao.xml #generated:8
+# view res/layout/fragment_detailliucheng.xml #generated:8
 # view res/layout/fragment_details.xml #generated:8
+# view res/layout/fragment_detaistupian.xml #generated:8
 # view res/layout/fragment_erwei.xml #generated:7
 # view res/layout/fragment_list.xml #generated:8
 # view res/layout/fragment_login.xml #generated:40

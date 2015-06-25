@@ -72,7 +72,9 @@
             android:exported="false"
             android:screenOrientation="behind"
             android:windowSoftInputMode="adjustResize|stateHidden" >
+            
         </activity>
+        <activity android:name="com.hutu.longchang.activity.DetailsActivity"></activity>
     </application>
 
 </manifest>

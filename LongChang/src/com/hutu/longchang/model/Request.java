@@ -266,6 +266,14 @@ public class Request {
 		}
 		httpGetConnect(url);
 	}
+	
+	/**
+	 * 公告接口
+	 */
+	public void bullHzGonggao(String RegNo){
+		String url = HostName + "?method=SBBulletinHzList" + "&RegNo=" + RegNo;
+		httpGetConnect(url);
+	}
 	/**
 	 * 商标综合查询
 	 * @param TabNum	国际分类号	

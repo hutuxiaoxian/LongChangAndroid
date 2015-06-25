@@ -28,7 +28,7 @@
                 android:id="@+id/edit_sear_name"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
-                android:hint="请输入查询关键字"
+                android:hint="@string/searchar_hint"
                 android:background="@null"
                 android:layout_marginLeft="10dp"
                 android:textColor="#ffffff"/>

@@ -1,8 +1,10 @@
 package com.hutu.longchang.fragment;
 
 import com.hutu.longchang.R;
+import com.hutu.longchang.activity.DetailsActivity;
 import com.hutu.longchang.model.Commodityd;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,13 +16,16 @@ public class DetaisFragment extends BaseFragment{
 	private TextView mTxt_leibie,mTxt_zhuce,mTxt_shenqigriqi,mTxt_zhuceriqi;
 	private TextView mTxt_shangbiaoname,mTxt_shiyongshangpin,mTxt_qunzu;
 	private TextView mTxt_shenqingren,mTxt_shenqingdizhi,mTxt_dailiren,mTxt_shangbiaozhuangtai;
-	private Bundle bundle;
-	private Commodityd comm;
+
+	private Commodityd comm = null;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		bundle = getArguments();
-		comm = (Commodityd) bundle.getSerializable("commond");
+		if(mActivity instanceof DetailsActivity){
+			Intent intent = mActivity.getIntent();
+			comm = (Commodityd) intent.getSerializableExtra("commond");
+		}
+		
 	}
 	
 	@Override
@@ -32,7 +37,7 @@ public class DetaisFragment extends BaseFragment{
 	@Override
 	public void onPrevious() {
 		super.onPrevious();
-		showFragment(new MainFragment(), Constant.TAG_MAIN);
+		mActivity.finish();
 	}
 	@Override
 	public void init() {

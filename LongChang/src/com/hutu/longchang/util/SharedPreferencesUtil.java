@@ -7,7 +7,9 @@ import android.content.SharedPreferences.Editor;
 public class SharedPreferencesUtil {
 
 	private SharedPreferences mSharedPreferences = null;
+	private SharedPreferences msharePreferences = null;
 	public static final String CONFIG_LONGCHANG = "config_longchang";
+	public static final String CONFIG_LONGCHANG1 = "config_longchang1";
 
 	private static String USERNAME = "username";
 	
@@ -15,10 +17,13 @@ public class SharedPreferencesUtil {
 	private static SharedPreferencesUtil INSTANCE = null;
 
 	private Editor editor = null;
+	private Editor editors = null;
 
 	public SharedPreferencesUtil(Context context) {
 		this.mContext = context;
 		mSharedPreferences = mContext.getSharedPreferences(CONFIG_LONGCHANG,
+				Context.MODE_PRIVATE);
+		msharePreferences = mContext.getSharedPreferences(CONFIG_LONGCHANG1,
 				Context.MODE_PRIVATE);
 	}
 
@@ -38,7 +43,21 @@ public class SharedPreferencesUtil {
 	public String loadUserName() {
 		return mSharedPreferences.getString(USERNAME, null);
 	}
+	
+	public void userNamesave(String userName){
+		editors = msharePreferences.edit();
+		editors.putString(USERNAME, userName);
+		editors.commit();
+	}
 
+	public String UserNameload() {
+		return msharePreferences.getString(USERNAME, null);
+	}
+	
+	public void ShardPreferencesClear(){
+		editors.clear();
+		editors.commit();
+	}
 	public void SharedPreferencesCler() {
 		editor.clear();
 		editor.commit();

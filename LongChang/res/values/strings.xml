@@ -33,4 +33,5 @@
 	<string name="main_list_item2">综合查询</string>
 	<string name="vipchongzhi">您的会员于《</string>
 	<string name="vipchongzhi1">》到期，如果需要继续享用vip超级用户特权，请您及时充值，谢谢配合，祝您生活愉快，事业顺利</string>
+	<string name="searchar_hint">请输入使用商品或服务项目</string>
 </resources>

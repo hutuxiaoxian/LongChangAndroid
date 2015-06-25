@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import com.hutu.longchang.R;
+import com.hutu.longchang.activity.DetailsActivity;
 import com.hutu.longchang.activity.MainActivity;
 import com.hutu.longchang.adapter.ListAdapter;
 import com.hutu.longchang.model.Commodityd;
 import com.hutu.longchang.model.NetWorkCallBack;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,11 +25,13 @@ public class ListFragment extends BaseFragment implements NetWorkCallBack, OnIte
 
 	private ArrayList<HashMap<String ,String>> mList = null; 
 	private ListView vList = null;
+	private int search = 0;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		Bundle bundle = getArguments();
+		search = bundle.getInt("searchclass");
 		mList = (ArrayList<HashMap<String, String>>) bundle.getSerializable("data");
 	}
 	@Override
@@ -59,11 +63,14 @@ public class ListFragment extends BaseFragment implements NetWorkCallBack, OnIte
 	public void onItemClick(AdapterView<?> paramAdapterView, View paramView,
 			int paramInt, long paramLong) {
 		Commodityd comm = returnComm(paramInt);
-		Bundle bundle = new Bundle();
-		bundle.putSerializable("commond", comm);
-		BaseFragment fragment = new DetaisFragment();
-		fragment.setArguments(bundle);
-		showFragment(fragment, Constant.TAG_DETAIS);
+		Intent intent = new Intent(mActivity,DetailsActivity.class);
+		intent.putExtra("commond", comm);
+		intent.putExtra("search", search);
+		startActivity(intent);
+//		
+//		BaseFragment fragment = new DetaisFragment();
+//		fragment.setArguments(bundle);
+//		showFragment(fragment, Constant.TAG_DETAIS);
 		
 	}
 	

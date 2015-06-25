@@ -28,6 +28,12 @@ public interface Constant {
 	
 	public String TAG_SHOPLIST = "shoplist_fragment";
 	
+	public String TAG_DETAISIMAGE = "detailsimage_fragment";
+	
+	public String TAG_DETAISLICHENG = "detailslicheng_fragment";
+	
+	public String TAG_DETAISGONGGAO = "detailsgonggao_fragment";
+	
 	
 //	SearchComplexActivity
 //	SearchClassActivity
