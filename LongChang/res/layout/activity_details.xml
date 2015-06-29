@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout
+        android:id="@+id/liner_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" 
+        android:background="#000000">
+        <RelativeLayout
+            android:id="@+id/rells1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtwen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="文字" 
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rells2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+             <TextView
+                 android:id="@+id/txttu"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_centerVertical="true"
+                 android:text="图片" 
+                 android:textColor="#ffffff"
+                 android:textStyle="bold"
+                 android:textSize="20sp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rells3"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtliu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="流程" 
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rells4"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/txtgong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="公告" 
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout 
+        android:id="@+id/details_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/liner_layout">
+        
+    </RelativeLayout>
+
+</RelativeLayout>
