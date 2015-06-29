@@ -21,13 +21,15 @@
                     android:id="@+id/detailgonggao_txt_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="国际分类号" />
+                    android:text="国际分类号"
+                    android:textSize="16sp" />
 
                 <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_below="@id/detailgonggao_txt_title"
-                    android:background="#efefef" >
+                    android:background="#efefef" 
+                    android:layout_margin="5dp">
 
                     <RelativeLayout
                         android:layout_width="fill_parent"

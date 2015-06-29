@@ -121,7 +121,7 @@ public class LoginFragment extends BaseFragment implements NetWorkCallBack {
 			ProgressDialogView.getInstance(mActivity).dismiss();
 			JSONObject jsonObject = new JSONObject(msg);
 			String userlogin = jsonObject.getString("result");
-			if ("1".equals(userlogin)) {
+			if ("1".equals(userlogin) || "2".equals(userlogin)) {
 				userName = jsonObject.getString("UserName");
 				SharedPreferencesUtil.getInstance(mActivity).saveUserName(userName);
 				SharedPreferencesUtil.getInstance(mActivity).userNamesave(userName);
@@ -134,18 +134,19 @@ public class LoginFragment extends BaseFragment implements NetWorkCallBack {
 				dialog.setPositiveButton("确认", null);
 				dialog.setNegativeButton("取消", null);
 				dialog.show();
-			}else if("2".equals(userlogin)){
-				AlertDialog.Builder dialog = new AlertDialog.Builder(mActivity);
-				dialog.setTitle("提示");
-				dialog.setMessage("您还有没VIP，或者VIP已经过期");
-				dialog.setPositiveButton("去购买", new DialogInterface.OnClickListener() {
-					@Override
-					public void onClick(DialogInterface paramDialogInterface, int paramInt) {
-						showFragment(new RechargeFragment(), Constant.TAG_USERCHONG);
-					}
-				});
-				dialog.show();
 			}
+//			else if("2".equals(userlogin)){
+//				AlertDialog.Builder dialog = new AlertDialog.Builder(mActivity);
+//				dialog.setTitle("提示");
+//				dialog.setMessage("您还有没VIP，或者VIP已经过期");
+//				dialog.setPositiveButton("去购买", new DialogInterface.OnClickListener() {
+//					@Override
+//					public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+//						showFragment(new RechargeFragment(), Constant.TAG_USERCHONG);
+//					}
+//				});
+//				dialog.show();
+//			}
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

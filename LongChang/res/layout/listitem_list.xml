@@ -17,45 +17,66 @@
         android:background="#ffffff"
         android:orientation="horizontal" >
 
-        <TextView
-            android:id="@+id/list_text_index"
+        <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="0.7"
-            android:gravity="center"
-            android:text="@string/list_text_index"
-            android:textColor="#000000"
-            android:textSize="18sp" />
+            android:gravity="center" >
 
-        <TextView
-            android:id="@+id/list_text_class"
+            <TextView
+                android:id="@+id/list_text_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_text_index"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="0.7"
-            android:gravity="center"
-            android:text="@string/list_text_class"
-            android:textColor="#000000"
-            android:textSize="18sp" />
+            android:gravity="center" >
 
-        <TextView
-            android:id="@+id/list_text_id"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1.3"
-            android:gravity="center"
-            android:text="@string/list_text_id"
-            android:textColor="#000000"
-            android:textSize="18sp" />
+            <TextView
+                android:id="@+id/list_text_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/list_text_class"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
 
-        <TextView
-            android:id="@+id/text_brand"
+        <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_weight="1.3"
-            android:gravity="@+id/list_center"
-            android:text="@string/list_text_brand"
-            android:textColor="#000000"
-            android:textSize="18sp" />
+            android:gravity="center" >
+            <TextView
+                android:id="@+id/list_text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/list_text_id"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/text_brand"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="@+id/list_center"
+                android:text="@string/list_text_brand"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RelativeLayout>
     </LinearLayout>
 
 </RelativeLayout>

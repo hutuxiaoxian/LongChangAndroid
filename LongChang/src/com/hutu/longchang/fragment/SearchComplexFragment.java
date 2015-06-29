@@ -108,7 +108,6 @@ public class SearchComplexFragment extends BaseFragment implements
 				// eClassify.getSelectedItemId());
 				// String classify = map.get("classify");
 				String classify = eClassify.getText().toString();
-
 				String reg = eRegister.getText().toString();
 				reg = reg.trim();
 				String name = eName.getText().toString();
@@ -139,7 +138,8 @@ public class SearchComplexFragment extends BaseFragment implements
 					dialog.show();	
 				} else {
 					ProgressDialogView.getInstance(mActivity).show();
-					req.zongHeInfo(classify, reg, name, people, null);
+//					req.zongHeInfo(classify, reg, name, people, null);
+					req.zongHeInfos("1", reg, name, people, classify, 1, 20);
 				}
 			}
 		});
@@ -163,25 +163,25 @@ public class SearchComplexFragment extends BaseFragment implements
 							map.put("classify", obj.getString("IntCls"));
 							map.put("name", obj.getString("TMCN"));
 							map.put("TMEN",obj.getString("TMEN"));
-							map.put("AppDate",obj.getString("AppDate"));
-							map.put("RegDate",obj.getString("RegDate"));
-							map.put("TrialDate",obj.getString("TrialDate"));
-							map.put("InterRegDate",obj.getString("InterRegDate"));
-							map.put("ValidDate",obj.getString("ValidDate"));
-							map.put("TrialNum",obj.getString("TrialNum"));
-							map.put("RegNum",obj.getString("RegNum"));
+//							map.put("AppDate",obj.getString("AppDate"));
+//							map.put("RegDate",obj.getString("RegDate"));
+//							map.put("TrialDate",obj.getString("TrialDate"));
+//							map.put("InterRegDate",obj.getString("InterRegDate"));
+//							map.put("ValidDate",obj.getString("ValidDate"));
+//							map.put("TrialNum",obj.getString("TrialNum"));
+//							map.put("RegNum",obj.getString("RegNum"));
 							map.put("TMApplicant",obj.getString("TMApplicant"));
-							map.put("TMAddress",obj.getString("TMAddress"));
-							map.put("TMAgent",obj.getString("TMAgent"));
-							map.put("TMDetail",obj.getString("TMDetail"));
-							map.put("SimilarGroup",obj.getString("SimilarGroup"));
-							map.put("TMType",obj.getString("TMType"));
-							map.put("ISTotal",obj.getString("ISTotal"));
-							map.put("TMAreaNum",obj.getString("TMAreaNum"));
-							map.put("TMRemark",obj.getString("TMRemark"));
-							map.put("TMStatus",obj.getString("TMStatus"));
-							map.put("TMTY",obj.getString("TMTY"));
-							map.put("TMDY",obj.getString("TMDY"));
+//							map.put("TMAddress",obj.getString("TMAddress"));
+//							map.put("TMAgent",obj.getString("TMAgent"));
+//							map.put("TMDetail",obj.getString("TMDetail"));
+//							map.put("SimilarGroup",obj.getString("SimilarGroup"));
+//							map.put("TMType",obj.getString("TMType"));
+//							map.put("ISTotal",obj.getString("ISTotal"));
+//							map.put("TMAreaNum",obj.getString("TMAreaNum"));
+//							map.put("TMRemark",obj.getString("TMRemark"));
+//							map.put("TMStatus",obj.getString("TMStatus"));
+//							map.put("TMTY",obj.getString("TMTY"));
+//							map.put("TMDY",obj.getString("TMDY"));
 							arrData.add(map);
 						}
 						BaseFragment fragment = new ListFragment();

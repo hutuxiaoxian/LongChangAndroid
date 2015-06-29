@@ -15,9 +15,11 @@
     <ListView
         android:id="@+id/detailgonggao_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/trade_manager_head" >
+        android:layout_below="@+id/trade_manager_head" 
+        android:background="#ffffff"
+        android:divider="@android:color/transparent">
 
     </ListView>
 

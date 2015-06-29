@@ -15,16 +15,16 @@
         android:layout_below="@id/trade_manager_head"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_margin="10dp"
+        android:layout_margin="5dp"
         android:background="#efefef">
 
        <RelativeLayout 
            android:id="@+id/rel1"
            android:layout_width="fill_parent"
            android:layout_height="wrap_content"
-           android:layout_marginTop="10dp"
-           android:layout_marginRight="10dp"
-           android:layout_marginLeft="10dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginLeft="5dp"
            android:background="#ffffff">
            
            <TextView
@@ -65,9 +65,9 @@
            android:layout_width="fill_parent"
            android:layout_height="wrap_content"
            android:background="#ffffff"
-           android:layout_marginTop="10dp"
-           android:layout_marginRight="10dp"
-           android:layout_marginLeft="10dp">
+           android:layout_marginTop="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginLeft="5dp">
            <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
