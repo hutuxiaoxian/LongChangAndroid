@@ -13,55 +13,57 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" >
     </com.hutu.longchang.widget.HeadTitleView>
-    
-    <RelativeLayout 
+
+    <RelativeLayout
         android:id="@+id/rel1"
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:layout_margin="10dp"
-        android:layout_below="@id/trade_manager_head">
+        android:layout_below="@id/trade_manager_head"
+        android:layout_margin="10dp" >
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="国际分类号:" 
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"/>
-        <RelativeLayout 
+            android:layout_marginTop="10dp"
+            android:text="国际分类号:"
+            android:textSize="20sp" />
+
+        <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_toRightOf="@id/textView1"
             android:layout_alignBottom="@id/textView1"
+            android:layout_toRightOf="@id/textView1"
             android:background="@drawable/js_srk" >
-             <EditText
-	            android:id="@+id/search_same_edit_classify"
-	            android:layout_width="fill_parent"
-	            android:layout_height="fill_parent"
-	            android:background="@null"
-	            android:ems="10"
-	            android:hint="@string/search_comple_edit_classify" 
-	            android:text="01"
-	            android:layout_toLeftOf="@+id/info_btn">
-        	</EditText>
 
-        	<Button
-        	    android:id="@+id/info_btn"
-        	    android:layout_width="44dp"
-        	    android:layout_height="44dp"
-        	    android:layout_alignParentRight="true"
-        	    android:layout_alignParentTop="true"
-        	    android:background="@drawable/ic_help"
-        	    android:textColor="#FF00" />
+            <EditText
+                android:id="@+id/search_same_edit_classify"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@+id/info_btn"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/search_comple_edit_classify"
+                android:text="01" >
+            </EditText>
 
+            <Button
+                android:id="@+id/info_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_help"
+                android:textColor="#FF00" />
         </RelativeLayout>
     </RelativeLayout>
 
-    <RelativeLayout 
+    <RelativeLayout
         android:id="@+id/rel2"
-        android:layout_below="@id/rel1"
         android:layout_width="fill_parent"
         android:layout_height="44dp"
-        android:layout_margin="10dp">
+        android:layout_below="@id/rel1"
+        android:layout_margin="10dp" >
 
         <TextView
             android:id="@+id/textView2"
@@ -71,70 +73,81 @@
             android:layout_centerVertical="true"
             android:text="查找方式:    "
             android:textSize="20sp" />
-        
+
         <Spinner
             android:id="@+id/search_same_spinner"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/js_srk" 
-            android:layout_toRightOf="@id/textView2"/>
+            android:layout_toRightOf="@id/textView2"
+            android:background="@drawable/js_srk" />
     </RelativeLayout>
-    
-    <RelativeLayout 
-        android:layout_below="@id/rel2"
-        android:id="@+id/rel3" 
+
+    <RelativeLayout
+        android:id="@+id/rel3"
         android:layout_width="fill_parent"
-        android:layout_margin="10dp"
-        android:layout_height="44dp">
+        android:layout_height="44dp"
+        android:layout_below="@id/rel2"
+        android:layout_margin="10dp" >
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="查询内容:    " 
-            android:textSize="20sp"/>
-        
+            android:text="查询内容:    "
+            android:textSize="20sp" />
+
         <EditText
             android:id="@+id/search_same_edit_content"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/js_srk"
             android:layout_toRightOf="@id/textView3"
+            android:background="@drawable/js_srk"
             android:ems="10"
             android:hint="@string/search_same_edit_content" />
     </RelativeLayout>
-    <RelativeLayout 
-        android:id="@+id/rel4" 
-		android:layout_below="@id/rel3"
-		android:layout_width="fill_parent"
-		android:layout_margin="10dp"
-		android:layout_height="55dp">
-          <TextView
-              android:id="@+id/textView4"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_alignParentLeft="true"
-              android:layout_centerVertical="true"
-              android:text="查询类型:    "
-              android:textSize="20sp" />
-          
-          <Spinner
-	        android:id="@+id/search_comple_spinner"
-	        style="@style/AppBaseTheme"
-	        android:layout_width="fill_parent"
-	        android:layout_height="fill_parent"
-	        android:layout_toRightOf="@id/textView4"/>
+
+    <RelativeLayout
+        android:id="@+id/rel4"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/rel3"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="查询类型:    "
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/textView4"
+            android:background="#efefef" >
+
+            <Spinner
+                android:id="@+id/search_comple_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dp"
+                android:background="#F9F9F9"/>
+        </RelativeLayout>
     </RelativeLayout>
-    
-     <Button
+
+    <Button
         android:id="@+id/search_same_bt_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/bt_bg"
-        android:text="@string/search_comple_bt_search"
-        android:textColor="@color/bt_font" 
         android:layout_below="@id/rel4"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:background="@color/bt_bg"
+        android:text="@string/search_comple_bt_search"
+        android:textColor="@color/bt_font" />
+
 </RelativeLayout>

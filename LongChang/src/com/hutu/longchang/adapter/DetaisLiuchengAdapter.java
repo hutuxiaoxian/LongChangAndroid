@@ -54,8 +54,8 @@ public class DetaisLiuchengAdapter extends BaseAdapter{
 		}
 		if(mList != null && mList.size() > 0){
 			HashMap<String, String> map = mList.get(position);
-			hodel.timerTxt.setText(map.get("timer"));
-			hodel.zhuangtaiTxt.setText(map.get("msg"));
+			hodel.timerTxt.setText(map.get("msg"));
+			hodel.zhuangtaiTxt.setText(map.get("timer"));
 		}
 		return convertView;
 	}

@@ -2,14 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:background="#F9F9F9">
+    android:background="#F9F9F9"
+    android:orientation="vertical" >
 
-    <com.hutu.longchang.widget.HeadTitleView 
-  		android:id="@+id/trade_manager_head"
+    <com.hutu.longchang.widget.HeadTitleView
+        android:id="@+id/trade_manager_head"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        
+        android:layout_height="wrap_content" >
     </com.hutu.longchang.widget.HeadTitleView>
 
     <LinearLayout
@@ -19,48 +18,44 @@
         <TextView
             android:id="@+id/textView1"
             android:layout_width="0dp"
-	        android:layout_marginLeft="@dimen/group"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/group"
             android:layout_weight=".34"
             android:text="国际分类号:" />
-        
-        <RelativeLayout 
-             android:layout_width="0dp"
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/group"
+            android:layout_marginRight="@dimen/group"
+            android:layout_marginTop="@dimen/group"
             android:layout_weight=".66"
-	        android:layout_height="40dp"
-	         android:layout_marginLeft="@dimen/group"
-	        android:layout_marginRight="@dimen/group"
-	        android:layout_marginTop="@dimen/group"
-            android:background="@drawable/js_srk"
-            >
+            android:background="@drawable/js_srk" >
 
-	        <Button
-	            android:id="@+id/bangzhu_btn"
-	            android:layout_width="44dp"
-	            android:layout_height="44dp"
-	            android:layout_alignParentRight="true"
-	            android:layout_alignParentTop="true"
-	            android:background="@drawable/ic_help"/>
+            <Button
+                android:id="@+id/bangzhu_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_help" />
 
-	        <EditText
-	            android:id="@+id/search_comple_edit_classify"
-	            android:layout_width="fill_parent"
-	            android:layout_height="fill_parent"
-	            android:background="@null"
-	            android:ems="10"
-	            android:hint="@string/search_comple_edit_classify"
-	            android:text="" 
-	            android:layout_toLeftOf="@id/bangzhu_btn">	      
-	         </EditText>
-
+            <EditText
+                android:id="@+id/search_comple_edit_classify"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/bangzhu_btn"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/search_comple_edit_classify"
+                android:text="" >
+            </EditText>
         </RelativeLayout>
-
-        
-
     </LinearLayout>
 
-    <!-- <LinearLayout
+    <!--
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
         >
@@ -80,104 +75,113 @@
 	        android:ems="10"
 	        android:hint="@string/search_comple_edit_classify" >
        	</Spinner>
-    </LinearLayout> -->
-    
-	<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        >
-        <TextView 
-            android:layout_width="0dp"
-	        android:layout_marginLeft="@dimen/group"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight=".34"
-            android:text="@string/search_comple_edit_register"
-            />
-        <EditText
-	        android:id="@+id/search_comple_edit_register"
-	        android:layout_width="0dp"
-            android:layout_weight=".66"
-	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="@dimen/group"
-	        android:layout_marginRight="@dimen/group"
-	        android:layout_marginTop="@dimen/group"
-	        android:ems="10"
-	        android:hint="@string/search_comple_edit_register" 
-	        android:background="@drawable/js_srk"/>
     </LinearLayout>
-    
-	<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        >
-        <TextView 
-            android:layout_width="0dp"
-            android:layout_weight=".34"
-	        android:layout_marginLeft="@dimen/group"
-            android:layout_height="wrap_content"
-           	android:layout_gravity="center"
-            android:text="@string/search_comple_edit_name"
-            />
-        <EditText
-	        android:id="@+id/search_comple_edit_name"
-	        android:layout_width="0dp"
-            android:layout_weight=".66"
-	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="@dimen/group"
-	        android:layout_marginRight="@dimen/group"
-	        android:layout_marginTop="@dimen/group"
-	        android:ems="10"
-	        android:hint="@string/search_comple_edit_name"
-	        android:background="@drawable/js_srk" />
-    </LinearLayout>
-    
-	<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        >
-        <TextView 
-            android:layout_width="0dp"
-            android:layout_weight=".34"
-	        android:layout_marginLeft="@dimen/group"
-            android:layout_height="wrap_content"
-           	android:layout_gravity="center"
-            android:text="@string/search_comple_edit_people"
-            />
-        <EditText
-	        android:id="@+id/search_comple_edit_people"
-	        android:layout_width="0dp"
-            android:layout_weight=".66"
-	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="@dimen/group"
-	        android:layout_marginRight="@dimen/group"
-	        android:layout_marginTop="@dimen/group"
-	        android:ems="10"
-	        android:hint="@string/search_comple_edit_people" 
-	        android:background="@drawable/js_srk"/>
-    </LinearLayout>
-	
+    -->
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        >
-        <TextView 
+        android:layout_height="wrap_content" >
+
+        <TextView
             android:layout_width="0dp"
-            android:layout_weight=".34"
-	        android:layout_marginLeft="@dimen/group"
             android:layout_height="wrap_content"
-           	android:layout_gravity="center"
-            android:text="查找方式"
-            />
-        <Spinner
-	        android:id="@+id/search_comple_spinner"
-	        style="@style/AppBaseTheme"
-	        android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/group"
+            android:layout_weight=".34"
+            android:text="@string/search_comple_edit_register" />
+
+        <EditText
+            android:id="@+id/search_comple_edit_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/group"
+            android:layout_marginRight="@dimen/group"
+            android:layout_marginTop="@dimen/group"
             android:layout_weight=".66"
-	        android:layout_height="wrap_content"
-	        android:layout_marginLeft="@dimen/group"
-	        android:layout_marginRight="@dimen/group"
-	        android:layout_marginTop="@dimen/group" />
+            android:background="@drawable/js_srk"
+            android:ems="10"
+            android:hint="@string/search_comple_edit_register" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/group"
+            android:layout_weight=".34"
+            android:text="@string/search_comple_edit_name" />
+
+        <EditText
+            android:id="@+id/search_comple_edit_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/group"
+            android:layout_marginRight="@dimen/group"
+            android:layout_marginTop="@dimen/group"
+            android:layout_weight=".66"
+            android:background="@drawable/js_srk"
+            android:ems="10"
+            android:hint="@string/search_comple_edit_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/group"
+            android:layout_weight=".34"
+            android:text="@string/search_comple_edit_people" />
+
+        <EditText
+            android:id="@+id/search_comple_edit_people"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/group"
+            android:layout_marginRight="@dimen/group"
+            android:layout_marginTop="@dimen/group"
+            android:layout_weight=".66"
+            android:background="@drawable/js_srk"
+            android:ems="10"
+            android:hint="@string/search_comple_edit_people" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/group"
+            android:layout_weight=".34"
+            android:text="查找方式" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/group"
+            android:layout_marginRight="@dimen/group"
+            android:layout_marginTop="@dimen/group"
+            android:layout_weight=".66" 
+            android:background="#efefef">
+
+            <Spinner
+                android:id="@+id/search_comple_spinner"
+                style="@style/AppBaseTheme"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dp" 
+                android:background="#F9F9F9"/>
+        </RelativeLayout>
     </LinearLayout>
 
     <Button
@@ -188,7 +192,7 @@
         android:layout_marginRight="@dimen/group"
         android:layout_marginTop="@dimen/group"
         android:background="@color/search_bt_bg"
-        android:textColor="@color/bt_font"
-        android:text="@string/search_comple_bt_search" />
+        android:text="@string/search_comple_bt_search"
+        android:textColor="@color/bt_font" />
 
 </LinearLayout>

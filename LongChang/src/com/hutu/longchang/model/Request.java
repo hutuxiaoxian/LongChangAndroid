@@ -351,8 +351,15 @@ public class Request {
 		String url = HostName + "?method=SBZongHeInfo";
 //		if (TabNum != null && TabNum.length() > 0) {
 //			url += ("&TabNum=" + TabNum);
-//		}
+//		}syso
+		System.out.println("type" + type);
+		
 		if(type != null && type.length() > 0){
+			if(type.equals("1")){
+				type = "0";
+			}else{
+				type = "1";
+			}
 			url += ("&type=" + type);
 		}
 		if (RegNO != null && RegNO.length() > 0) {
@@ -381,6 +388,7 @@ public class Request {
 		if(start >= 0 && end >= 0){
 			url += "&Start=" + start + "&End=" + end;
 		}
+		System.out.println("综合查询连接：" + url);
 		httpGetConnect(url);
 	}
 

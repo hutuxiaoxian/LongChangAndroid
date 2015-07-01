@@ -69,11 +69,11 @@ public class DetaisgonggaoFragment extends BaseFragment implements NetWorkCallBa
 					for (int i = 0; i < jsonarray.length(); i++) {
 						HashMap<String, String> map = new HashMap<String, String>();
 						JSONObject jsonobject = jsonarray.getJSONObject(i);
-						map.put("Matters", jsonobject.getString("Matters"));
-						map.put("TrialNum", jsonobject.getString("TrialNum"));
+						map.put("timer", jsonobject.getString("Matters"));
+						map.put("msg", jsonobject.getString("TrialNum"));
 						list.add(map);
 					}
-					DetaisGonggaoAdapter adapter = new DetaisGonggaoAdapter(list, mActivity);
+					DetaisLiuchengAdapter adapter = new DetaisLiuchengAdapter(list, mActivity);
 					mListView.setAdapter(adapter);
 					/*
 					 * Matters

@@ -27,6 +27,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import com.hutu.longchang.R;
 import com.hutu.longchang.fragment.BaseFragment;
@@ -91,6 +92,20 @@ public class MainActivity extends BaseActivity implements NetWorkCallBack {
 				startActivityForResult(intent, SCAN_CODE);
 			}
 		});
+		shouyeBtn.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View paramView) {
+				if(TextUtils.isEmpty(SharedPreferencesUtil.getInstance(MainActivity.this).loadUserName())){
+					Toast.makeText(MainActivity.this, "请先登录", Toast.LENGTH_SHORT).show();
+				}else{
+					getSupportFragmentManager()
+					.beginTransaction()
+					.replace(R.id.main_relatlayout, new MainFragment(),
+							Constant.TAG_USERLOGIN).commit();
+				}
+				
+			}
+		});
 	}
 
 	@Override
@@ -148,8 +163,9 @@ public class MainActivity extends BaseActivity implements NetWorkCallBack {
 							MainActivity.this.finish();
 							if(!TextUtils.isEmpty(SharedPreferencesUtil.getInstance(MainActivity.this).loadUserName())){
 								SharedPreferencesUtil.getInstance(MainActivity.this).SharedPreferencesCler();
+								System.exit(0);
 							}
-							System.exit(0);
+							
 						}
 					});
 			dialog.setNegativeButton("取消", null);

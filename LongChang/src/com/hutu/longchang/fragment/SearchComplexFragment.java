@@ -36,7 +36,7 @@ public class SearchComplexFragment extends BaseFragment implements
 	private Button searchBtn;
 	private Button info_Btn;
 
-	String[] arrData = new String[] { "精确" };
+	String[] arrData = new String[] { "精确" ,"模糊"};
 	ArrayList<HashMap<String, String>> classifyData = new ArrayList<HashMap<String, String>>();
 
 	@Override
@@ -115,6 +115,7 @@ public class SearchComplexFragment extends BaseFragment implements
 				String people = ePeople.getText().toString();
 				people = people.trim();
 
+				String lei = "" + spinner.getSelectedItemId();
 				String msg =  null;
 				if(name.length() != 0 && people.length() != 0){
 					msg = "商品名称与申请人只能有一个";
@@ -139,7 +140,7 @@ public class SearchComplexFragment extends BaseFragment implements
 				} else {
 					ProgressDialogView.getInstance(mActivity).show();
 //					req.zongHeInfo(classify, reg, name, people, null);
-					req.zongHeInfos("1", reg, name, people, classify, 1, 20);
+					req.zongHeInfos(lei, reg, name, people, classify, 1, 20);
 				}
 			}
 		});
@@ -172,10 +173,10 @@ public class SearchComplexFragment extends BaseFragment implements
 //							map.put("RegNum",obj.getString("RegNum"));
 							map.put("TMApplicant",obj.getString("TMApplicant"));
 //							map.put("TMAddress",obj.getString("TMAddress"));
-//							map.put("TMAgent",obj.getString("TMAgent"));
 //							map.put("TMDetail",obj.getString("TMDetail"));
 //							map.put("SimilarGroup",obj.getString("SimilarGroup"));
-//							map.put("TMType",obj.getString("TMType"));
+//							map.put("ap.put("TMAgent",obj.getString("TMAgent"));
+//							mTMType",obj.getString("TMType"));
 //							map.put("ISTotal",obj.getString("ISTotal"));
 //							map.put("TMAreaNum",obj.getString("TMAreaNum"));
 //							map.put("TMRemark",obj.getString("TMRemark"));

@@ -93,32 +93,41 @@ public class SearchSameFragment extends BaseFragment implements NetWorkCallBack{
 		mSerach.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View paramView) {
-				ProgressDialogView.getInstance(mActivity).show();
 				Request req = new Request(mActivity, SearchSameFragment.this);
 //				HashMap<String ,String> map = classifyData.get((int) eClassify.getSelectedItemId());
 //				String classify = map.get("classify");
 				String classify = eClassify.getText().toString().trim();
 				String context = eContent.getText().toString();
-				int item = (int) spinner.getSelectedItemId();
-				switch (item) {
-				case 0:
-					item += 1;
-					break;
-				case 1:
-					item += 3;
-					break;
-				case 2:
-					item += 4;
-					break;
-				case 3:
-					item += 5;
-					break;
-				default:
-					item += 3;
-					break;
+				if(TextUtils.isEmpty(context)){
+					AlertDialog.Builder dialog = new AlertDialog.Builder(mActivity);
+					dialog.setTitle("提示");
+					dialog.setMessage("请输入查询内容");
+					dialog.setPositiveButton("知道了",null);
+					dialog.show();
+				}else{
+					ProgressDialogView.getInstance(mActivity).show();
+					int item = (int) spinner.getSelectedItemId();
+					switch (item) {
+					case 0:
+						item += 1;
+						break;
+					case 1:
+						item += 3;
+						break;
+					case 2:
+						item += 4;
+						break;
+					case 3:
+						item += 5;
+						break;
+					default:
+						item += 3;
+						break;
+					}
+					int jing = (int) sp.getSelectedItemId();
+					req.jinsichaxun(classify, context, ""+item , 1 , 5,jing);
 				}
-				int jing = (int) sp.getSelectedItemId();
-				req.jinsichaxun(classify, context, ""+item , 1 , 5,jing);
+				
 			}
 		});
 		info_btn.setOnClickListener(new OnClickListener() {

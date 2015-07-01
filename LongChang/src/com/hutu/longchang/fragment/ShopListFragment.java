@@ -20,9 +20,8 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.hutu.longchang.R;
@@ -36,7 +35,7 @@ public class ShopListFragment extends BaseFragment implements NetWorkCallBack,
 		OnRefreshListener {
 
 	private MyListView mListView;
-	private ImageView imageView;
+	private Button imageView;
 	private EditText searTxt;
 	private ShopAdapter adapter;
 	private ArrayList<HashMap<String, String>> mapList  = new ArrayList<HashMap<String, String>>();
@@ -59,7 +58,7 @@ public class ShopListFragment extends BaseFragment implements NetWorkCallBack,
 
 	@Override
 	public void init() {
-		imageView = (ImageView) mView.findViewById(R.id.image_view);
+		imageView = (Button) mView.findViewById(R.id.image_view);
 		mListView = (MyListView) mView.findViewById(R.id.serach_list);
 		searTxt = (EditText) mView.findViewById(R.id.edit_sear_name);
 		start = 1;
@@ -148,6 +147,10 @@ public class ShopListFragment extends BaseFragment implements NetWorkCallBack,
 					adapter.notifyDataSetChanged();
 					// 控制脚布局隐藏
 					mListView.hideFooterView();
+				}else{
+					adapter.notifyDataSetChanged();
+					mListView.hideFooterView();
+					Toast.makeText(mActivity, "暂无数据", Toast.LENGTH_SHORT).show();
 				}
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
