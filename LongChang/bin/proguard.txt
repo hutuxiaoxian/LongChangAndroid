@@ -49,7 +49,7 @@
 # view res/layout/fragment_shoplist.xml #generated:8
 -keep class com.hutu.longchang.widget.HeadTitleView { <init>(...); }
 
-# view res/layout/fragment_shoplist.xml #generated:47
+# view res/layout/fragment_shoplist.xml #generated:50
 -keep class com.hutu.longchang.widget.MyListView { <init>(...); }
 
 # view AndroidManifest.xml #generated:60

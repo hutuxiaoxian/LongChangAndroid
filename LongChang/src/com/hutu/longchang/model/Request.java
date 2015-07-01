@@ -252,9 +252,11 @@ public class Request {
 			int start, int end, int jingmo) {
 		try {
 			typeName = URLEncoder.encode(typeName, "UTF-8");
+			TabNum = URLEncoder.encode(TabNum,"UTF-8");
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
+		
 		String url = HostName + "?method=SBJinSiChaXun&TabNum=" + TabNum
 				+ "&type=" + type + "&TypeName=" + typeName;
 		url = url + "&IsHuanXu=" + jingmo + "&IsJhz=" + jingmo + "&IsRyjhz="

@@ -43,7 +43,6 @@
                 android:layout_toLeftOf="@+id/info_btn"
                 android:background="@null"
                 android:ems="10"
-                android:hint="@string/search_comple_edit_classify"
                 android:text="01" >
             </EditText>
 
@@ -74,12 +73,19 @@
             android:text="查找方式:    "
             android:textSize="20sp" />
 
-        <Spinner
-            android:id="@+id/search_same_spinner"
+        <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_toRightOf="@id/textView2"
-            android:background="@drawable/js_srk" />
+            android:background="#efefef" >
+
+            <Spinner
+                android:id="@+id/search_same_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="1dp"
+                android:background="#F9F9F9"  />
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
@@ -103,14 +109,13 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/textView3"
             android:background="@drawable/js_srk"
-            android:ems="10"
-            android:hint="@string/search_same_edit_content" />
+            android:ems="10" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/rel4"
         android:layout_width="fill_parent"
-        android:layout_height="55dp"
+        android:layout_height="45dp"
         android:layout_below="@id/rel3"
         android:layout_margin="10dp" >
 
@@ -133,8 +138,8 @@
                 android:id="@+id/search_comple_spinner"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_margin="2dp"
-                android:background="#F9F9F9"/>
+                android:layout_margin="1dp"
+                android:background="#F9F9F9" />
         </RelativeLayout>
     </RelativeLayout>
 

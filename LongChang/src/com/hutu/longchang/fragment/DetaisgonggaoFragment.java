@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.hutu.longchang.R;
 import com.hutu.longchang.activity.DetailsActivity;
@@ -65,6 +66,9 @@ public class DetaisgonggaoFragment extends BaseFragment implements NetWorkCallBa
 					+ "?method=SBBulletinHzList")){
 				try {
 					JSONArray jsonarray = new JSONArray(msg);
+					if(jsonarray.length() <= 0){
+						Toast.makeText(mActivity, "暂无公告信息", Toast.LENGTH_SHORT).show();
+					}
 					ArrayList<HashMap<String, String>> list = new ArrayList<HashMap<String,String>>();
 					for (int i = 0; i < jsonarray.length(); i++) {
 						HashMap<String, String> map = new HashMap<String, String>();

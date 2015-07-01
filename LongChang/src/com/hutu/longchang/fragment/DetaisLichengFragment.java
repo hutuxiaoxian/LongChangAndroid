@@ -7,12 +7,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.hutu.longchang.R;
 import com.hutu.longchang.activity.DetailsActivity;
@@ -68,6 +70,9 @@ public class DetaisLichengFragment extends BaseFragment implements
 					+ "?method=SBStateFlowInfo")) {
 				try {
 					JSONArray json = new JSONArray(msg);
+					if(json.length() <= 0){
+						Toast.makeText(mActivity, "暂无流程信息", Toast.LENGTH_SHORT).show();
+					}
 					ArrayList<HashMap<String, String>> list = new ArrayList<HashMap<String,String>>();
 					for(int i = 0;i < json.length() ; i++){
 						JSONObject jsonobj = json.getJSONObject(i);
@@ -86,6 +91,9 @@ public class DetaisLichengFragment extends BaseFragment implements
 				}
 				
 			}
+//			else{
+//				
+//			}
 		}
 	}
 }

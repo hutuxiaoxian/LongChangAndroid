@@ -48,7 +48,6 @@
                 android:layout_toLeftOf="@id/bangzhu_btn"
                 android:background="@null"
                 android:ems="10"
-                android:hint="@string/search_comple_edit_classify"
                 android:text="" >
             </EditText>
         </RelativeLayout>
@@ -99,8 +98,7 @@
             android:layout_marginTop="@dimen/group"
             android:layout_weight=".66"
             android:background="@drawable/js_srk"
-            android:ems="10"
-            android:hint="@string/search_comple_edit_register" />
+            android:ems="10" />
     </LinearLayout>
 
     <LinearLayout
@@ -124,8 +122,7 @@
             android:layout_marginTop="@dimen/group"
             android:layout_weight=".66"
             android:background="@drawable/js_srk"
-            android:ems="10"
-            android:hint="@string/search_comple_edit_name" />
+            android:ems="10"/>
     </LinearLayout>
 
     <LinearLayout
@@ -149,13 +146,12 @@
             android:layout_marginTop="@dimen/group"
             android:layout_weight=".66"
             android:background="@drawable/js_srk"
-            android:ems="10"
-            android:hint="@string/search_comple_edit_people" />
+            android:ems="10" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp" >
+        android:layout_height="55dp" >
 
         <TextView
             android:layout_width="0dp"
@@ -167,7 +163,7 @@
 
         <RelativeLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_marginLeft="@dimen/group"
             android:layout_marginRight="@dimen/group"
             android:layout_marginTop="@dimen/group"
@@ -179,7 +175,7 @@
                 style="@style/AppBaseTheme"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:layout_margin="2dp" 
+                android:layout_margin="1dp" 
                 android:background="#F9F9F9"/>
         </RelativeLayout>
     </LinearLayout>
