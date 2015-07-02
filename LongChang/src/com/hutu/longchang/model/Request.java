@@ -385,7 +385,7 @@ public class Request {
 			url += ("&applicant=" + applicant);
 		}
 		if(Intcls != null && Intcls.length() > 0){
-			url += ("Intcls=" + Intcls);
+			url += ("&Intcls=" + Intcls);
 		}
 		if(start >= 0 && end >= 0){
 			url += "&Start=" + start + "&End=" + end;

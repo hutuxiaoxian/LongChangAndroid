@@ -109,23 +109,23 @@ public class SearchSameFragment extends BaseFragment implements NetWorkCallBack{
 					int item = (int) spinner.getSelectedItemId();
 					switch (item) {
 					case 0:
-						item += 1;
+						item = 1;
 						break;
 					case 1:
-						item += 3;
+						item = 3;
 						break;
 					case 2:
-						item += 4;
+						item = 4;
 						break;
 					case 3:
-						item += 5;
+						item = 5;
 						break;
 					default:
-						item += 3;
+						item = 3;
 						break;
 					}
 					int jing = (int) sp.getSelectedItemId();
-					req.jinsichaxun(classify, context, ""+item , 1 , 5,jing);
+					req.jinsichaxun(classify, context, ""+item , 1 , 20,jing);
 				}
 				
 			}
