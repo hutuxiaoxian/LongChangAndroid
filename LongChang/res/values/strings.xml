@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">龙昌</string>
+    <string name="app_name">商标查询</string>
     <string name="action_settings">Settings</string>
     <string name="list_text_index">序号</string>
     <string name="list_text_id">注册号，申请号</string>
