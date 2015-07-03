@@ -2,13 +2,12 @@ package com.hutu.longchang.fragment;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import com.hutu.longchang.R;
 import com.hutu.longchang.model.NetWorkCallBack;
 import com.hutu.longchang.model.Request;
 import com.hutu.longchang.util.Util;
 import com.hutu.longchang.widget.ProgressDialogView;
-
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -21,7 +20,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class RegisterFragment extends BaseFragment implements NetWorkCallBack{
+@SuppressLint("ShowToast") public class RegisterFragment extends BaseFragment implements NetWorkCallBack{
 	private EditText eAccount;
 	private EditText ePassword;
 	private EditText eRePassowrd;
@@ -135,33 +134,40 @@ public class RegisterFragment extends BaseFragment implements NetWorkCallBack{
 		}
 	}
 
-	@Override
+	@SuppressLint("ShowToast") @Override
 	public void afterResponseFetched(int respCode, int flag, String msg) {
 		ProgressDialogView.getInstance(mActivity).dismiss();
-		try {
-			JSONObject jsonobj = new JSONObject(msg);
-			if("1".equals(jsonobj.getString("result"))){
-				AlertDialog.Builder dialog = new AlertDialog.Builder(mActivity);
-				dialog.setMessage("注册成功");
-				dialog.setTitle("提示");
-				dialog.setPositiveButton("确认", new DialogInterface.OnClickListener() {
-					@Override
-					public void onClick(DialogInterface paramDialogInterface, int paramInt) {
-						showFragment(new LoginFragment(), Constant.TAG_USERLOGIN);
-					}
-				});
-				dialog.show();
-			}else{
-				AlertDialog.Builder dialog = new AlertDialog.Builder(mActivity);
-				dialog.setMessage("账号已存在");
-				dialog.setTitle("提示");
-				dialog.setPositiveButton("确认", null);
-				dialog.setNegativeButton("取消", null);
-				dialog.show();
+		if(flag == Request.getReqeustFlag(Request.HostName + "?method=SetRegisterUser")){
+			try {
+				JSONObject jsonobj = new JSONObject(msg);
+				if("1".equals(jsonobj.getString("result"))){
+					AlertDialog.Builder dialog = new AlertDialog.Builder(mActivity);
+					dialog.setMessage("注册成功");
+					dialog.setTitle("提示");
+					dialog.setPositiveButton("确认", new DialogInterface.OnClickListener() {
+						@Override
+						public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+							showFragment(new LoginFragment(), Constant.TAG_USERLOGIN);
+						}
+					});
+					dialog.show();
+				}else{
+					AlertDialog.Builder dialog = new AlertDialog.Builder(mActivity);
+					dialog.setMessage("账号已存在");
+					dialog.setTitle("提示");
+					dialog.setPositiveButton("确认", null);
+					dialog.setNegativeButton("取消", null);
+					dialog.show();
+				}
+			} catch (JSONException e) {
+				e.printStackTrace();
 			}
-		} catch (JSONException e) {
-			e.printStackTrace();
+		} else {
+			if ("1".equals(msg)){
+				Toast.makeText(mActivity, "验证码获取成功", 0);
+			}
 		}
+		
 	}
 
 }

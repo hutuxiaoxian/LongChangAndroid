@@ -121,13 +121,12 @@ public class SearchSameFragment extends BaseFragment implements NetWorkCallBack{
 						item = 5;
 						break;
 					default:
-						item = 3;
+						item = 2;
 						break;
 					}
 					int jing = (int) sp.getSelectedItemId();
 					req.jinsichaxun(classify, context, ""+item , 1 , 20,jing);
 				}
-				
 			}
 		});
 		info_btn.setOnClickListener(new OnClickListener() {
@@ -161,7 +160,7 @@ public class SearchSameFragment extends BaseFragment implements NetWorkCallBack{
 							HashMap<String ,String> map = new HashMap<String, String>();
 							map.put("regNo", obj.getString("RegNO"));
 							map.put("classify", obj.getString("IntCls"));
-							map.put("name", obj.getString("TMCN"));
+							map.put("name", obj.getString("TMCN")+";"+obj.getString("TMEN")+";"+obj.getString("TMZT"));
 							map.put("TMEN",obj.getString("TMEN"));
 							map.put("AppDate",obj.getString("AppDate"));
 							map.put("RegDate",obj.getString("RegDate"));

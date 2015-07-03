@@ -450,8 +450,9 @@ public class Request {
 	public void setRegisterCode(String account, String code) {
 		String url = "http://utf8.sms.webchinese.cn/?Uid=longchang&Key=bbb1e31d8d3609525c43&smsMob="
 				+ account
-				+ "&smsText=%%E6%%82%%A8%%E7%%9A%%84%%E9%%AA%%8C%%E8%%AF%%81%%E7%%A0%%81:";
+				+ "&smsText=%E6%82%A8%E7%9A%84%E9%AA%8C%E8%AF%81%E7%A0%81:";
 		url = url + code;
+		httpGetConnect(url);
 	}
 
 	/**

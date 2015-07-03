@@ -162,7 +162,7 @@ public class SearchComplexFragment extends BaseFragment implements
 							HashMap<String, String> map = new HashMap<String, String>();
 							map.put("regNo", obj.getString("RegNO"));
 							map.put("classify", obj.getString("IntCls"));
-							map.put("name", obj.getString("TMCN"));
+							map.put("name", obj.getString("SBMC"));
 							map.put("TMEN",obj.getString("TMEN"));
 //							map.put("AppDate",obj.getString("AppDate"));
 //							map.put("RegDate",obj.getString("RegDate"));

@@ -20,7 +20,7 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_weight="0.7"
+            android:layout_weight="0.4"
             android:gravity="center" >
 
             <TextView
@@ -29,13 +29,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/list_text_index"
                 android:textColor="#000000"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_weight="0.7"
+            android:layout_weight="0.4"
             android:gravity="center" >
 
             <TextView
@@ -45,7 +45,7 @@
                 android:gravity="center"
                 android:text="@string/list_text_class"
                 android:textColor="#000000"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -59,13 +59,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/list_text_id"
                 android:textColor="#000000"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_weight="1.3"
+            android:layout_weight="1.9"
             android:gravity="center" >
 
             <TextView
@@ -75,7 +75,8 @@
                 android:gravity="@+id/list_center"
                 android:text="@string/list_text_brand"
                 android:textColor="#000000"
-                android:textSize="18sp" />
+                android:lines="1"
+                android:textSize="16sp" />
         </RelativeLayout>
     </LinearLayout>
 

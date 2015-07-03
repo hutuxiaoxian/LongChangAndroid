@@ -132,7 +132,7 @@ public class DetaisFragment extends BaseFragment implements NetWorkCallBack {
 							mTxt_qunzu.setText(obj.getString("SimilarGroup"));
 //							map.put("SimilarGroup",
 //									obj.getString("SimilarGroup"));
-							mTxt_shangbiaoname.setText(obj.getString("TMCN"));
+							mTxt_shangbiaoname.setText(obj.getString("SBMC"));
 							mTxt_shangbiaozhuangtai.setText(obj.getString("TMType"));
 //							map.put("TMType", obj.getString("TMType"));
 //							map.put("ISTotal", obj.getString("ISTotal"));
