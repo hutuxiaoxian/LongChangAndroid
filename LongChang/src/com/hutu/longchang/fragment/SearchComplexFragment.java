@@ -154,6 +154,7 @@ public class SearchComplexFragment extends BaseFragment implements
 					+ "?method=SBZongHeInfo")) {
 				try {
 					JSONObject jsonObj = new JSONObject(msg);
+					int count = jsonObj.getInt("total");
 					JSONArray json = jsonObj.getJSONArray("data");
 					if (json.length() > 0) {
 						ArrayList<HashMap<String, String>> arrData = new ArrayList<HashMap<String, String>>();
@@ -187,7 +188,27 @@ public class SearchComplexFragment extends BaseFragment implements
 						}
 						BaseFragment fragment = new ListFragment();
 						Bundle bundle = new Bundle();
+						bundle.putInt("count", count);
+						bundle.putString("type", "complex");
 						bundle.putSerializable("data", arrData);
+						
+						String classify = eClassify.getText().toString();
+						String reg = eRegister.getText().toString();
+						reg = reg.trim();
+						String name = eName.getText().toString();
+						name = name.trim();
+						String people = ePeople.getText().toString();
+						people = people.trim();
+
+						String lei = "" + spinner.getSelectedItemId();
+						HashMap<String, String> map = new HashMap<String, String>();
+						map.put("type", lei);
+						map.put("RegNO", reg);
+						map.put("Sbmc", name);
+						map.put("applicant", people);
+						map.put("Intcls", classify);
+						bundle.putSerializable("request", map);
+						
 						fragment.setArguments(bundle);
 						showFragment(fragment, Constant.TAG_SEARCHLIST);
 						// Intent intent = new Intent(this, ListActivity.class);

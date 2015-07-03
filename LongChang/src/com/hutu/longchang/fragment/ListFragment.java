@@ -3,37 +3,58 @@ package com.hutu.longchang.fragment;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.hutu.longchang.R;
-import com.hutu.longchang.activity.DetailsActivity;
-import com.hutu.longchang.activity.MainActivity;
-import com.hutu.longchang.adapter.ListAdapter;
-import com.hutu.longchang.model.Commodityd;
-import com.hutu.longchang.model.NetWorkCallBack;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class ListFragment extends BaseFragment implements NetWorkCallBack, OnItemClickListener{
+import com.hutu.longchang.R;
+import com.hutu.longchang.activity.DetailsActivity;
+import com.hutu.longchang.adapter.ListAdapter;
+import com.hutu.longchang.model.Commodityd;
+import com.hutu.longchang.model.NetWorkCallBack;
+import com.hutu.longchang.model.Request;
+import com.hutu.longchang.widget.MyListView;
+import com.hutu.longchang.widget.OnRefreshListener;
+
+public class ListFragment extends BaseFragment implements NetWorkCallBack, OnItemClickListener, OnRefreshListener{
 
 	private ArrayList<HashMap<String ,String>> mList = null; 
-	private ListView vList = null;
+	private MyListView vList = null;
 	private int search = 0;
+	private String superType;
+	private int countPage = 0;
+	
+	private int start,end;
+	private HashMap<String, String> mRequest;
+	private ListAdapter adapter;
+	
+	@SuppressWarnings("unchecked")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		Bundle bundle = getArguments();
 		search = bundle.getInt("searchclass");
+		superType = bundle.getString("type");
+		countPage = bundle.getInt("count");
+		if (countPage < 40){
+			end = countPage;
+		} else {
+			end = 40;
+		}
+		mRequest = (HashMap<String, String>)bundle.getSerializable("request");
+		start = 21;
 		mList = (ArrayList<HashMap<String, String>>) bundle.getSerializable("data");
 	}
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -42,15 +63,20 @@ public class ListFragment extends BaseFragment implements NetWorkCallBack, OnIte
 	}
 	@Override
 	public void onPrevious() {
-		showFragment(new MainFragment(), Constant.TAG_MAIN);
+		if ("same".equals(superType)) {
+			showFragment(new SearchSameFragment(), Constant.TAG_SEARCHSAME);
+		} else {
+			showFragment(new SearchComplexFragment(), Constant.TAG_SEARCHCOMPLEX);
+		}
 		super.onPrevious();
 	}
 	@Override
 	public void init() {
-		vList = (ListView)mView.findViewById(R.id.list_list);
+		vList = (MyListView)mView.findViewById(R.id.list_list);
+		vList.setOnRefreshListener(this);
 //		int[] to = new int[]{R.id.listitem_text_id, R.id.listitem_text_class, R.id.listitem_text_brand};
 //		String[] from = new String[]{LISTITEM_KEY_ID, LISTITEM_KEY_CLASS, LISTITEM_KEY_BRAND};
-		ListAdapter adapter = new ListAdapter(mList, mActivity);
+		adapter = new ListAdapter(mList, mActivity);
 		vList.setAdapter(adapter);
 		
 	}
@@ -127,8 +153,50 @@ public class ListFragment extends BaseFragment implements NetWorkCallBack, OnIte
 	}
 	@Override
 	public void afterResponseFetched(int respCode, int flag, String msg) {
+		vList.hideFooterView();
+		if (respCode == 0) {
+			try {
+				JSONObject jsonObj = new JSONObject(msg);
+				JSONArray json = jsonObj.getJSONArray("data");
+				int count = jsonObj.getInt("total");
+				start = end + 1;
+				if (end + 20 > count) {
+					end = count;
+				} else {
+					end += 20;
+				}
+				if(json.length() > 0 ){
+					for(int i= 0;i< json.length() ;i++){
+						JSONObject item = json.getJSONObject(i);
+						HashMap<String, String> map = new HashMap<String, String>();
+						map.put("regNo", item.getString("RegNO"));
+						map.put("classify", item.getString("IntCls"));
+						String sbmc = item.has("SBMC")?item.optString("SBMC"):item.getString("TMCN")+";"+item.getString("TMEN")+";"+item.getString("TMZT");
+						map.put("name", sbmc);
+						mList.add(map);
+					}
+					adapter.notifyDataSetChanged();
+				}
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	@Override
+	public void onDownPullRefresh() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("...........");
+	}
+	@Override
+	public void onLoadingMore() {
+		// TODO Auto-generated method stub
+		Request req = new Request(mActivity, this);
+		if ("complex".equals(superType)) {
+			req.zongHeInfos(mRequest.get("type"), mRequest.get("RegNO"), mRequest.get("Sbmc"), mRequest.get("applicant"), mRequest.get("Intcls"), start, end);
+		} else if ("same".equals(superType)) {
+			req.jinsichaxun(mRequest.get("TabNum"), mRequest.get("typeName"), mRequest.get("type"), start, end, Integer.parseInt(mRequest.get("jingmo")));
+		}
 	}
 
+	
 }

@@ -85,10 +85,10 @@
         </RelativeLayout>
     </LinearLayout>
 
-    <ListView
+    <com.hutu.longchang.widget.MyListView
         android:id="@+id/list_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-    </ListView>
+    </com.hutu.longchang.widget.MyListView>
 
 </LinearLayout>

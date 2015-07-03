@@ -153,6 +153,7 @@ public class SearchSameFragment extends BaseFragment implements NetWorkCallBack{
 				try {
 					JSONObject jsonObj = new JSONObject(msg);
 					JSONArray json = jsonObj.getJSONArray("data");
+					int count = jsonObj.getInt("total");
 					if(json.length() > 0 ){
 						ArrayList<HashMap<String ,String>>arrData = new ArrayList<HashMap<String ,String>>();
 						for(int i= 0;i< json.length() ;i++){
@@ -191,6 +192,37 @@ public class SearchSameFragment extends BaseFragment implements NetWorkCallBack{
 //						addFragment(fragment, R.id.center_frame, TAG_MYCARDFRAGMENT);
 						BaseFragment fragment = new ListFragment();
 						Bundle bundle = new Bundle();
+						bundle.putInt("count", count);
+						bundle.putString("type", "same");
+						
+						HashMap<String, String> map = new HashMap<String, String>();
+						String classify = eClassify.getText().toString().trim();
+						String context = eContent.getText().toString();
+						int item = (int) spinner.getSelectedItemId();
+						switch (item) {
+						case 0:
+							item = 1;
+							break;
+						case 1:
+							item = 3;
+							break;
+						case 2:
+							item = 4;
+							break;
+						case 3:
+							item = 5;
+							break;
+						default:
+							item = 2;
+							break;
+						}
+						int jing = (int) sp.getSelectedItemId();
+						map.put("TabNum", classify);
+						map.put("typeName", context);
+						map.put("type", item+"");
+						map.put("jingmo", jing+"");
+						bundle.putSerializable("request", map);
+						
 						bundle.putSerializable("data", arrData);
 						fragment.setArguments(bundle);
 						showFragment(fragment, Constant.TAG_SEARCHLIST);
