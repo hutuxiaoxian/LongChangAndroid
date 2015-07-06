@@ -52,6 +52,7 @@ public class DetaisgonggaoFragment extends BaseFragment implements NetWorkCallBa
 	}
 	@Override
 	public void init() {
+		setTitle("公告");
 		mListView = (ListView) mView.findViewById(R.id.detailgonggao_list);
 	}
 

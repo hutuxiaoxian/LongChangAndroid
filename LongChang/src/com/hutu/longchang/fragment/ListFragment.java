@@ -72,6 +72,7 @@ public class ListFragment extends BaseFragment implements NetWorkCallBack, OnIte
 	}
 	@Override
 	public void init() {
+		setTitle("查询列表");
 		vList = (MyListView)mView.findViewById(R.id.list_list);
 		vList.setOnRefreshListener(this);
 //		int[] to = new int[]{R.id.listitem_text_id, R.id.listitem_text_class, R.id.listitem_text_brand};
@@ -171,7 +172,7 @@ public class ListFragment extends BaseFragment implements NetWorkCallBack, OnIte
 						HashMap<String, String> map = new HashMap<String, String>();
 						map.put("regNo", item.getString("RegNO"));
 						map.put("classify", item.getString("IntCls"));
-						String sbmc = item.has("SBMC")?item.optString("SBMC"):item.getString("TMCN")+";"+item.getString("TMEN")+";"+item.getString("TMZT");
+						String sbmc = item.has("SBMC")?item.optString("SBMC"):item.getString("TMCN")+item.getString("TMEN")+item.getString("TMZT");
 						map.put("name", sbmc);
 						mList.add(map);
 					}

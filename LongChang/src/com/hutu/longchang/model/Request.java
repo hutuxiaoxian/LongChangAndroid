@@ -263,7 +263,7 @@ public class Request {
 				+ jingmo + "&IsNhqtbq=" + jingmo + "&IsWqxt=" + jingmo
 				+ "&IsBfxt=" + jingmo + "&IsBhz=" + jingmo + "&IsDyxt="
 				+ jingmo + "&IsNx=" + jingmo + "" + "&Start=" + start + "&End="
-				+ 20;
+				+ end;
 		httpGetConnect(url);
 	}
 

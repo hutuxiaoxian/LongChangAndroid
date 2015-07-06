@@ -46,7 +46,6 @@ public class ShopListFragment extends BaseFragment implements NetWorkCallBack,
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
 	}
 
 	@Override
@@ -148,7 +147,7 @@ public class ShopListFragment extends BaseFragment implements NetWorkCallBack,
 					// 控制脚布局隐藏
 					mListView.hideFooterView();
 				}else{
-					adapter.notifyDataSetChanged();
+//					adapter.notifyDataSetChanged();
 					mListView.hideFooterView();
 					Toast.makeText(mActivity, "暂无数据", Toast.LENGTH_SHORT).show();
 				}

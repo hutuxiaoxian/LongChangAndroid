@@ -56,6 +56,7 @@ public class DetaisLichengFragment extends BaseFragment implements
 	@Override
 	public void init() {
 		mList = (ListView) mView.findViewById(R.id.detailiucheng_list);
+		setTitle("状态查询");
 	}
 
 	@Override

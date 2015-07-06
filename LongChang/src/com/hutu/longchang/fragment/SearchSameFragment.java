@@ -161,7 +161,7 @@ public class SearchSameFragment extends BaseFragment implements NetWorkCallBack{
 							HashMap<String ,String> map = new HashMap<String, String>();
 							map.put("regNo", obj.getString("RegNO"));
 							map.put("classify", obj.getString("IntCls"));
-							map.put("name", obj.getString("TMCN")+";"+obj.getString("TMEN")+";"+obj.getString("TMZT"));
+							map.put("name", obj.getString("TMCN")+obj.getString("TMEN")+obj.getString("TMZT"));
 							map.put("TMEN",obj.getString("TMEN"));
 							map.put("AppDate",obj.getString("AppDate"));
 							map.put("RegDate",obj.getString("RegDate"));
@@ -222,7 +222,7 @@ public class SearchSameFragment extends BaseFragment implements NetWorkCallBack{
 						map.put("type", item+"");
 						map.put("jingmo", jing+"");
 						bundle.putSerializable("request", map);
-						
+						bundle.putInt("count", count);
 						bundle.putSerializable("data", arrData);
 						fragment.setArguments(bundle);
 						showFragment(fragment, Constant.TAG_SEARCHLIST);

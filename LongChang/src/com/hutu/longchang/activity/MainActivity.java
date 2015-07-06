@@ -124,7 +124,7 @@ public class MainActivity extends BaseActivity implements NetWorkCallBack {
 //			if (resultCode == RESULT_OK) {
 			Request req = new Request(this, this);
 			result = data.getStringExtra("qrCode");
-			req.getBarCodeInfo("0000001");
+			req.getBarCodeInfo(result);
 			System.out.println("条码++++++++++++" + result);
 //			}else if (resultCode == RESULT_CANCELED) {
 //				result = "没有扫描出任何东西";
@@ -189,40 +189,47 @@ public class MainActivity extends BaseActivity implements NetWorkCallBack {
 				try {
 					System.out.println("msg" + msg);
 					JSONArray jsonArry = new JSONArray(msg);
-					JSONObject json = jsonArry.getJSONObject(0);
-					Commodityd dityd = new Commodityd();
-					dityd.setIntCls(json.getString("IntCls"));
-					dityd.setRegNo(json.getString("RegNO"));
-					dityd.setTmcn(json.getString("TMCN"));
-					dityd.setTmen(json.getString("TMEN"));
-					dityd.setAppDate(json.getString("AppDate"));
-					dityd.setRegDate(json.getString("RegDate"));
-					dityd.setTrialDate(json.getString("TrialDate"));
-					dityd.setInterRegDate(json.getString("InterRegDate"));
-					dityd.setValidDate(json.getString("ValidDate"));
-					dityd.setTrialNum(json.getString("TrialNum"));
-					dityd.setRegNum(json.getString("RegNum"));
-					dityd.setTmApplicant(json.getString("TMApplicant"));
-					dityd.setTmAddress(json.getString("TMAddress"));
-					dityd.setTmAgent(json.getString("TMAgent"));
-					dityd.setTmDetail(json.getString("TMDetail"));
-					dityd.setSimilarGroup(json.getString("SimilarGroup"));
-					dityd.setTmType(json.getString("TMType"));
-					dityd.setIsTotal(json.getString("ISTotal"));
-					dityd.setTmAreaNum(json.getString("TMAreaNum"));
-					dityd.setTmRemark(json.getString("TMRemark"));
-					dityd.setTmStatus(json.getString("TMStatus"));
-					dityd.setTmTY(json.getString("TMTY"));
-					dityd.setTmDY(json.getString("TMDY"));
-					//System.out.println("dsfdsfdsfdsfdsf" + dityd.getIntCls()+dityd.getRegNo()+dityd.getTmAddress());
-					DetaisFragment fragment = new DetaisFragment();
-					Bundle bundle = new Bundle();
-					bundle.putSerializable("commond", dityd);
-					fragment.setArguments(bundle);
-					getSupportFragmentManager()
-					.beginTransaction()
-					.replace(R.id.main_relatlayout, fragment,
-							Constant.TAG_DETAIS).commit();
+					if (jsonArry.length() > 0) {
+						ArrayList<HashMap<String ,String>>arrData = new ArrayList<HashMap<String ,String>>();
+						for (int i=0;i<jsonArry.length();i++) {
+							JSONObject obj = jsonArry.getJSONObject(i);
+							HashMap<String ,String> map = new HashMap<String, String>();
+							map.put("regNo", obj.getString("RegNO"));
+							map.put("classify", obj.getString("IntCls"));
+							map.put("name", obj.getString("TMCN")+obj.getString("TMEN")+obj.getString("TMZT"));
+							map.put("TMEN",obj.getString("TMEN"));
+							map.put("AppDate",obj.getString("AppDate"));
+							map.put("RegDate",obj.getString("RegDate"));
+							map.put("TrialDate",obj.getString("TrialDate"));
+							map.put("InterRegDate",obj.getString("InterRegDate"));
+							map.put("ValidDate",obj.getString("ValidDate"));
+							map.put("TrialNum",obj.getString("TrialNum"));
+							map.put("RegNum",obj.getString("RegNum"));
+							map.put("TMApplicant",obj.getString("TMApplicant"));
+							map.put("TMAddress",obj.getString("TMAddress"));
+							map.put("TMAgent",obj.getString("TMAgent"));
+							map.put("TMDetail",obj.getString("TMDetail"));
+							map.put("SimilarGroup",obj.getString("SimilarGroup"));
+							map.put("TMType",obj.getString("TMType"));
+							map.put("ISTotal",obj.getString("ISTotal"));
+							map.put("TMAreaNum",obj.getString("TMAreaNum"));
+							map.put("TMRemark",obj.getString("TMRemark"));
+							map.put("TMStatus",obj.getString("TMStatus"));
+							map.put("TMTY",obj.getString("TMTY"));
+							map.put("TMDY",obj.getString("TMDY"));
+							arrData.add(map);
+						}
+						BaseFragment fragment = new ListFragment();
+						Bundle bundle = new Bundle();
+						bundle.putString("type", "same");
+						
+						bundle.putSerializable("data", arrData);
+						fragment.setArguments(bundle);
+						
+						FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+						ft.replace(R.id.main_relatlayout, fragment, Constant.TAG_SEARCHLIST);
+						ft.commit();
+					}
 				} catch (JSONException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
