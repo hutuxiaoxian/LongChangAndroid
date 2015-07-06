@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Toast;
 
 import com.hutu.longchang.R;
 import com.hutu.longchang.activity.DetailsActivity;
@@ -177,6 +178,8 @@ public class ListFragment extends BaseFragment implements NetWorkCallBack, OnIte
 						mList.add(map);
 					}
 					adapter.notifyDataSetChanged();
+				}else{
+					Toast.makeText(mActivity, "暂无数据", Toast.LENGTH_SHORT).show();
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
